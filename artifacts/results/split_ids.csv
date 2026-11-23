@@ -1,0 +1,1129 @@
+Molecule_Index,Compound ID,smiles,Split
+930,Hexamethylbenzene,Cc1c(C)c(C)c(C)c(C)c1C,Train
+670,"1,1,2-Trichlorotrifluoroethane",FC(F)(Cl)C(F)(Cl)Cl,Train
+65,"Atovaquone(0,430mg/ml) - neutral",OC4=C(C1CCC(CC1)c2ccc(Cl)cc2)C(=O)c3ccccc3C4=O,Train
+398,Mefenacet,CN(C(=O)COc1nc2ccccc2s1)c3ccccc3,Train
+736,5-Methylchrysene,c1cccc2c3c(C)cc4ccccc4c3ccc12,Train
+1022,Azobenzene,N(=Nc1ccccc1)c2ccccc2,Train
+430,Disulfiram,CCN(CC)C(=S)SSC(=S)N(CC)CC,Train
+254,megestrol acetate,CC(=O)OC3(CCC4C2C=C(C)C1=CC(=O)CCC1(C)C2CCC34C)C(C)=O ,Train
+1096,Benzophenone,O=C(c1ccccc1)c2ccccc2,Train
+312,"trans-1,4-Dimethylcyclohexane",C/C1CCC(\C)CC1,Train
+433,chlordimeform,CN(C)C=Nc1ccc(Cl)cc1C,Train
+221,"2,4-Dinitrotoluene",Cc1ccc(cc1N(=O)=O)N(=O)=O,Train
+235,Atrazine,CCNc1nc(Cl)nc(NC(C)C)n1,Train
+461,"N,N-Diethylaniline",CCN(CC)c1ccccc1,Train
+622,Fluridone,Cn2cc(c1ccccc1)c(=O)c(c2)c3cccc(c3)C(F)(F)F,Train
+305,Isofenphos,CCOP(=S)(NC(C)C)Oc1ccccc1C(=O)OC(C)C,Train
+380,Ethyl hexanoate,CCCCCC(=O)OCC,Train
+1093,Cyclooctyl-5-spirobarbituric acid,O=C2NC(=O)C1(CCCCCCC1)C(=O)N2,Train
+1071,Pentachloroethane,ClC(Cl)C(Cl)(Cl)Cl,Train
+249,"1,2-Benzenediol",Oc1ccccc1O,Train
+661,"2,2',3,4,4',5',6-PCB",Clc1ccc(c(Cl)c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl,Train
+753,"cis-1,2-Dimethylcyclohexane",C/C1CCCCC1\C,Train
+71,Nitrofen,Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2,Train
+94,"1,3-Dimethylnaphthalene",Cc1cc(C)c2ccccc2c1,Train
+665,p-Chlorobromobenzene,Clc1ccc(Br)cc1,Train
+33,"1,1-Dichloroethylene",ClC(=C)Cl,Train
+1108,Propylene,CC=C,Train
+259,"7,12-Dimethylbenz(a)anthracene",Cc1c2ccccc2c(C)c3ccc4ccccc4c13,Train
+204,Propetamphos,CCNP(=S)(OC)OC(=CC(=O)OC(C)C)C,Train
+485,Trichlorfon,COP(=O)(OC)C(O)C(Cl)(Cl)Cl,Train
+822,Metranidazole,Cc1ncc(N(=O)=O)n1CCO ,Train
+889,5-Methyl-5-ethylbarbituric acid,O=C1NC(=O)NC(=O)C1(C)CC,Train
+365,Pyrimidine,c1cncnc1,Train
+77,"2,3',5-PCB",Clc1cccc(c1)c2cc(Cl)ccc2Cl ,Train
+84,"1,2-Diethylbenzene",CCc1ccccc1CC,Train
+432,Dienochlor,ClC1=C(Cl)C(Cl)(C(=C1Cl)Cl)C2(Cl)C(=C(Cl)C(=C2Cl)Cl)Cl,Train
+82,Thiourea,NC(=S)N,Train
+1070,Fluoromethalone,CC1CC2C3CCC(O)(C(=O)C)C3(C)CC(O)C2(F)C4(C)C=CC(=O)C=C14,Train
+535,2-Methyltetrahydrofurane,CC1CCCO1,Train
+1074,Isobutylbenzene,CC(C)Cc1ccccc1,Train
+927,Flucytosine,Nc1nc(=O)[nH]cc1F,Train
+937,3-Methyl-2-pentanone,CCC(C)C(=O)C,Train
+652,Clomazone,CC1(C)CON(Cc2ccccc2Cl)C1=O,Train
+552,Danazol,CC23Cc1cnoc1C=C2CCC4C3CCC5(C)C4CCC5(O)C#C,Train
+350,2-Propanol,CC(C)O,Train
+605,Acetamide,CC(=O)N,Train
+5,benzothiazole,c2ccc1scnc1c2 ,Train
+310,17a-Methyltestosterone,CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C,Train
+921,1-Hexene-3-ol,CCCC(O)C=C,Train
+752,1-Napthol,Oc1cccc2ccccc12,Train
+104,1-Ethylnaphthalene ,CCc1cccc2ccccc12,Train
+97,"2,3',4',5-PCB",Clc1ccc(Cl)c(c1)c2ccc(Cl)c(Cl)c2,Train
+810,Tetrahydropyran ,C1CCOCC1,Train
+1024,"2,6-Dichlorophenol",Oc1c(Cl)cccc1Cl,Train
+314,Methyl t-butyl ether ,COC(C)(C)C,Train
+530,RTI 10,O2c1ccccc1N(C)C(=O)c3cccnc23 ,Train
+526,2-Methylpropene,CC(=C)C,Train
+62,Triamcinolone,CC34CC(O)C1(F)C(CCC2=CC(=O)C=CC12C)C3CC(O)C4(O)C(=O)CO,Train
+281,o-Nitrotoluene,Cc1ccccc1N(=O)=O,Train
+1051,3-Heptanol ,CCCCC(O)CC,Train
+266,triamcinolone diacetate,CC(=O)OCC(=O)C3(O)C(CC4C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC34C)OC(C)=O ,Train
+578,adrenosterone,CC34CC(=O)C1C(CCC2=CC(=O)CCC12C)C3CCC4(=O) ,Train
+238,"3,3-Dimethyl-2-butanone",CC(=O)C(C)(C)C,Train
+572,o-Chloroaniline,Nc1ccccc1Cl,Train
+145,2-hydroxypteridine,Oc2ncc1nccnc1n2,Train
+1053,"3,5-Dichlorophenol",Oc1cc(Cl)cc(Cl)c1,Train
+602,mercaptobenzothiazole,Sc2nc1ccccc1s2 ,Train
+644,phenolphthalein,Oc1ccc(cc1)C2(OC(=O)c3ccccc23)c4ccc(O)cc4 ,Train
+118,Hexylbenzene ,CCCCCCc1ccccc1,Train
+762,2-Methy-2-Butene,CC=C(C)C,Train
+531,Fluorene ,C1c2ccccc2c3ccccc13,Train
+250,Reverse Transcriptase inhibitor 1,CCN2c1ncccc1N(C)C(=O)c3cccnc23 ,Train
+1087,Sulfallate,CCN(CC)C(=S)SCC(Cl)=C,Train
+285,Barbital,O=C1NC(=O)NC(=O)C1(CC)CC,Train
+494,Propane,CCC,Train
+9,Rotenone,COc5cc4OCC3Oc2c1CC(Oc1ccc2C(=O)C3c4cc5OC)C(C)=C ,Train
+532,Methylcyclohexane ,CC1CCCCC1,Train
+561,Warfarin,CC(=O)CC(c1ccccc1)c3c(O)c2ccccc2oc3=O ,Train
+196,1-Hexyne ,CCCCC#C,Train
+757,2-Heptanone,CCCCCC(=O)C,Train
+370,Buthidazole,CN1CC(O)N(C1=O)c2nnc(s2)C(C)(C)C,Train
+81,4-methylpteridine,Cc1ncnc2nccnc12,Train
+389,9-anthrol,c3ccc2c(O)c1ccccc1cc2c3 ,Train
+545,m-Chloronitrobenzene ,Clc1cccc(c1)N(=O)=O,Train
+1009,2-Hexanone,CCCCC(=O)C,Train
+986,phenothrin,CC(C)=CC3C(C(=O)OCc2cccc(Oc1ccccc1)c2)C3(C)C ,Train
+718,Coronene,c1cc2ccc3ccc4ccc5ccc6ccc1c7c2c3c4c5c67,Train
+599,2-Hydroxypyridine,Oc1ccccn1,Train
+239,4-Chlorophenol ,Oc1ccc(Cl)cc1,Train
+909,2-cyanoguanidine,NC(N)=NC#N ,Train
+211,"2,2-Dimethylpentane",CCCC(C)(C)C,Train
+493,Nimetazepam,CN2C(=O)CN=C(c1ccccc1)c3cc(ccc23)N(=O)=O,Train
+893,Flumetralin,CCN(Cc1c(F)cccc1Cl)c2c(cc(cc2N(=O)=O)C(F)(F)F)N(=O)=O,Train
+144,m-Xylene ,Cc1cccc(C)c1,Train
+1032,"2,4,6-Trichlorophenol",Oc1c(Cl)cc(Cl)cc1Cl,Train
+593,3-Propanoyloxymethylphenytoin,O=C1N(COC(=O)CC)C(=O)C(N1)(c2ccccc2)c3ccccc3,Train
+227,"2-Methyl-1,3-Butadiene ",CC(=C)C=C,Train
+1043,nicotinamide,NC(=O)c1cccnc1 ,Train
+1030,Epitostanol,CC45CCC2C(CCC3CC1SC1CC23C)C4CCC5O,Train
+675,Procymidone,CC12CC2(C)C(=O)N(C1=O)c3cc(Cl)cc(Cl)c3,Train
+985,Carbetamide,c1c(NC(=O)OC(C)C(=O)NCC)cccc1,Train
+177,Butabarbital,O=C1NC(=O)NC(=O)C1(CC)C(C)CC,Train
+1089,Mefluidide,CC(=O)Nc1cc(NS(=O)(=O)C(F)(F)F)c(C)cc1C,Train
+617,Butylate,CCSC(=O)N(CC(C)C)CC(C)C,Train
+135,Indan,C1Cc2ccccc2C1,Train
+790,hematein,c1cc(O)c(O)c2OCC3(O)CC4=CC(=O)C(O)=CC4=C3c21,Train
+1081,2-butenal,CC=CC=O,Train
+529,Benfuracarb,CCOC(=O)CCN(SN(C)C(=O)Oc1cccc2CC(C)(C)Oc21)C(C)C,Train
+1123,halothane,FC(F)(F)C(Cl)Br ,Train
+7,Estradiol,CC12CCC3C(CCc4cc(O)ccc34)C2CCC1O,Train
+462,"1,3-Difluorobenzene",Fc1cccc(F)c1,Train
+155,Propyl acetate,CCCOC(=O)C,Train
+1008,Flumethasone,CC1CC2C3CC(F)C4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO,Train
+357,Chlorbromuron,CON(C)C(=O)Nc1ccc(Br)c(Cl)c1,Train
+667,1-Butene,CCC=C,Train
+223,Formetanate,CNC(=O)Oc1cccc(N=CN(C)C)c1,Train
+329,"2,4,6-Trinitrotoluene",Cc1c(cc(cc1N(=O)=O)N(=O)=O)N(=O)=O,Train
+614,Dibromomethane,BrCBr,Train
+947,Ethylcyclohexane,CCC1CCCCC1,Train
+914,Ethyl heptanoate,CCCCCCC(=O)OCC,Train
+964,Triclosan,Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl,Train
+788,1-Octadecanol,CCCCCCCCCCCCCCCCCCO,Train
+706,Furane,c1ccoc1,Train
+774,thiouracil,Sc1nccc(=O)[nH]1 ,Train
+1029,3-Ethyl-3-pentanol,CCC(O)(CC)CC,Train
+678,meconin,c1c(OC)c(OC)C2C(=O)OCC2c1,Train
+722,Tetrabromomethane,BrC(Br)(Br)Br,Train
+1088,Chloroethane,ClCC,Train
+913,4-Nitroacetanilide,CC(=O)Nc1ccc(cc1)N(=O)=O,Train
+575,Butyl acetate,CCCCOC=O,Train
+1003,Butanethiol ,CCCCS,Train
+1073,2-Methylpropan-1-ol,CC(C)CO,Train
+440,p-Nitroaniline,Nc1ccc(cc1)N(=O)=O,Train
+728,oxyphenbutazone,CCCCC1C(=O)N(N(C1=O)c2ccc(O)cc2)c3ccccc3 ,Train
+881,N-Methylaniline ,CNc1ccccc1,Train
+832,Rovral,CC(C)NC(=O)N1CC(=O)N(C1=O)c2cc(Cl)cc(Cl)c2,Train
+163,Butamben,CCCCOC(=O)c1ccc(N)cc1,Train
+228,linalool,CC(C)=CCCC(O)(C)C=C,Train
+522,"1,3,5-Trichlorobenzene",Clc1cc(Cl)cc(Cl)c1,Train
+908,"2,3',4,4',5-PCB",Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl ,Train
+212,Pentamethylbenzene,Cc1cc(C)c(C)c(C)c1C,Train
+950,Chloropham,CC(C)OC(=O)Nc1cccc(Cl)c1,Train
+79,Propiconazole,CCCC1COC(Cn2cncn2)(O1)c3ccc(Cl)cc3Cl,Train
+148,2-Butanone,CCC(=O)C,Train
+302,Sulfanilamide,Nc1ccc(cc1)S(N)(=O)=O,Train
+506,1-Butyne,CCC#C,Train
+689,Ethylene,C=C,Train
+628,"1,3-diethylthiourea",CCNC(=S)NCC,Train
+513,2-methoxypteridine,COc2ncc1nccnc1n2,Train
+43,menthol,CC(C)C1CCC(C)CC1O ,Train
+528,"2,3-Dimethyl-1,3-Butadiene",CC(=C)C(=C)C,Train
+133,Malonic acid diethylester,CCOC(=O)CC(=O)OCC,Train
+707,Methoproptryne,COCCCNc1nc(NC(C)C)nc(SC)n1,Train
+534,Methylparaben,COC(=O)c1ccc(O)cc1,Train
+620,1-Chlorobutane,CCCCCl,Train
+311,Dulcin,CCOc1ccc(NC(N)=O)cc1,Train
+408,Linuron,CON(C)C(=O)Nc1ccc(Cl)c(Cl)c1,Train
+587,benodanil,c1c(NC(=O)c2ccccc2(I))cccc1,Train
+760,phthalamide,c1cC2C(=O)NC(=O)C2cc1,Train
+589,o-Fluorobromobenzene,Fc1ccccc1Br,Train
+976,"1,8-Cineole",CC12CCC(CC1)C(C)(C)O2,Train
+1124,Oxamyl,CNC(=O)ON=C(SC)C(=O)N(C)C,Train
+935,indoline,c2ccc1NCCc1c2 ,Train
+0,Amigdalin,OCC3OC(OCC2OC(OC(C#N)c1ccccc1)C(O)C(O)C2O)C(O)C(O)C3O ,Train
+422,captafol,ClC(Cl)C(Cl)(Cl)SN2C(=O)C1CC=CCC1C2=O ,Train
+360,Dimefuron,CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C,Train
+382,Amitraz,CN(C=Nc1ccc(C)cc1C)C=Nc2ccc(C)cc2C,Train
+316,1-Hexadecanol,CCCCCCCCCCCCCCCCO,Train
+961,methyltestosterone acetate,CC(=O)OC3(C)CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C ,Train
+475,Iodoethane,CCI,Train
+880,"2,2-Dimethylbutane",CCC(C)(C)C,Train
+677,Dinoseb,CCC(C)c1cc(cc(N(=O)=O)c1O)N(=O)=O ,Train
+968,dioctyl phthalate,CCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC ,Train
+807,bupirimate,CCCCc1c(C)nc(NCC)nc1OS(=O)(=O)N(C)C ,Train
+172,pregnenolone,CC(=O)C3CCC4C2CC=C1CC(O)CCC1(C)C2CCC34C ,Train
+450,DDD,ClC(Cl)C(c1ccc(Cl)cc1)c2ccc(Cl)cc2,Train
+125,Glyceryl triacetate,CC(=O)OCC(COC(=O)C)OC(=O)C,Train
+558,Dibenzothiophene,c1ccc2c(c1)sc3ccccc23,Train
+90,"2,3-Dichloronitrobenzene",O=N(=O)c1c(Cl)c(Cl)ccc1,Train
+1092,thiofanox,CNC(=O)ON=C(CSC)C(C)(C)C ,Train
+181,Etofenprox,CCOc1ccc(cc1)C(C)(C)COCc3cccc(Oc2ccccc2)c3,Train
+621,triforine,ClC(Cl)(Cl)C(NC=O)N1C=CN(C=C1)C(NC=O)C(Cl)(Cl)Cl ,Train
+867,Di(2-ethylhexyl)-phthalate,CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC,Train
+251,Dimethyl sulfide,CSC,Train
+69,"2,2'-PCB",Clc1ccccc1c2ccccc2Cl ,Train
+131,Fludrocortisone,CC34CC(O)C1(F)C(CCC2=CC(=O)CCC12C)C3CCC4(O)C(=O)CO ,Train
+300,RTI 5,CCN2c1ccccc1N(C)C(=O)c3cccnc23 ,Train
+584,2-Ethylnaphthalene,CCc1ccc2ccccc2c1,Train
+326,Azintamide,CCN(CC)C(=O)CSc1ccc(Cl)nn1,Train
+882,"1,4-Pentadiene ",C=CCC=C,Train
+499,Acenapthene,C1Cc2cccc3cccc1c23,Train
+581,Bromomethane,CBr,Train
+798,7-methoxypteridine,COc2cnc1cncnc1n2,Train
+495,Minoxidil,Nc1cc(nc(N)n1=O)N2CCCCC2 ,Train
+338,Fluometuron,CN(C)C(=O)Nc1cccc(c1)C(F)(F)F,Train
+910,Chloropicrin,ClC(Cl)(Cl)N(=O)=O,Train
+164,RTI 3,O2c1cc(C)ccc1N(C)C(=O)c3cc(N)cnc23 ,Train
+28,"P,P'-DDE",ClC(Cl)=C(c1ccc(Cl)cc1)c2ccc(Cl)cc2,Train
+516,Acetonitrile,CC#N,Train
+193,2-Chlorobutane,CCC(C)Cl,Train
+679,Glycerol,OCC(O)CO,Train
+169,Ethalfluralin,CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O,Train
+700,Ethion,CCOP(=S)(OCC)SCSP(=S)(OCC)OCC,Train
+173,Iodomethane,CI,Train
+518,acetyl sulfisoxazole,CC(=O)N(S(=O)c1ccc(N)cc1)c2onc(C)c2C ,Train
+799,Chlordene,ClC2=C(Cl)C3(Cl)C1C=CCC1C2(Cl)C3(Cl)Cl ,Train
+987,Cycluron,CN(C)C(=O)NC1CCCCCCC1,Train
+491,"2,2,4-Trimethylpentane",CC(C)CC(C)(C)C,Train
+73,5-Allyl-5-phenylbarbital,O=C1NC(=O)NC(=O)C1(CC=C)c1ccccc1,Train
+851,Betamethasone-17-valerate,CCCCC(=O)OC3(C(C)CC4C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC34C)C(=O)CO,Train
+234,4-Methylbiphenyl,Cc1ccc(cc1)c2ccccc2,Train
+214,dibutyl sebacate,CCCCOC(=O)CCCCCCCCC(=O)OCCCC,Train
+823,Pentylcyclopentane,CCCCCC1CCCC1,Train
+132,ethiofencarb,CCSCc1ccccc1OC(=O)NC ,Train
+673,o-Nitroanisole,COc1ccccc1N(=O)=O,Train
+817,methyl laurate,CCCCCCCCCCCC(=O)OC,Train
+185,Ethisterone,CC12CCC(=O)C=C1CCC3C2CCC4(C)C3CCC4(O)C#C ,Train
+41,4-Pentene-1-ol,OCCCC=C,Train
+108,2-Methylpropane,CC(C)C,Train
+737,Phenetole,CCOc1ccccc1,Train
+567,"1,2,4,5-Tetrachlorobenzene",Clc1cc(Cl)c(Cl)cc1Cl,Train
+868,2-Ethyl pyridine,CCc1ccccn1,Train
+483,Amitrole,Nc1nc[nH]n1,Train
+468,Carbofuran,CNC(=O)Oc1cccc2CC(C)(C)Oc12,Train
+24,Dinitramine,CCN(CC)c1c(cc(c(N)c1N(=O)=O)C(F)(F)F)N(=O)=O,Train
+992,3-Pentanol,CCC(O)CC,Train
+1050,Monotropitoside,COC(=O)c1ccccc1OC2OC(COC3OCC(O)C(O)C3O)C(O)C(O)C2O,Train
+660,Chlorzoxazone,Clc2ccc1oc(=O)[nH]c1c2,Train
+862,"2,3,3',4,4',5-PCB",Clc1ccc(cc1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl ,Train
+366,p-Chloronitrobenzene,Clc1ccc(cc1)N(=O)=O,Train
+731,Diuron,CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1,Train
+940,Nitromethane,CN(=O)=O,Train
+383,Prometon,COc1nc(NC(C)C)nc(NC(C)C)n1,Train
+454,2-Hexanol,CCCCC(C)O,Train
+264,Monuron,CN(C)C(=O)Nc1ccc(Cl)cc1,Train
+746,Diazepam,CN2C(=O)CN=C(c1ccccc1)c3cc(Cl)ccc23,Train
+850,"5,6-Dimethylchrysene",Cc1c(C)c2c3ccccc3ccc2c4ccccc14,Train
+444,1-Nonene ,CCCCCCCC=C,Train
+395,3-Hexanone,CCCC(=O)CC,Train
+176,isophorone,CC1=CC(=O)CC(C)(C)C1 ,Train
+18,Diazinon,CCOP(=S)(OCC)Oc1cc(C)nc(n1)C(C)C,Train
+615,Dexamethasone,CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO,Train
+1061,Griseofulvin,COC1=CC(=O)CC(C)C13Oc2c(Cl)c(OC)cc(OC)c2C3=O,Train
+61,Methyl butyrate,CCCOC(=O)CC,Train
+272,Deltamethrin,CC1(C)C(C=C(Br)Br)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,Train
+1059,Cycloheptene,C1CCC=CCC1,Train
+278,"1,1,2-Trichloroethane",ClCC(Cl)Cl,Train
+732,Cyclopentene ,C1CC=CC1,Train
+368,o-Chloronitrobenzene,Clc1ccccc1N(=O)=O,Train
+887,m-Chlorobromobenzene,Clc1cccc(Br)c1,Train
+715,Ethyl-p-hydroxybenzoate ,CCOC(=O)c1ccc(O)cc1,Train
+674,Prasterone,CC34CCC1C(CC=C2CC(O)CCC12C)C3CCC4=O,Train
+547,"2,2',4,5'-PCB",Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl ,Train
+879,"2,2',3,4,5,5',6-PCB",Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl,Train
+783,1-Tetradecanol,CCCCCCCCCCCCCCO,Train
+456,Etomidate,CCOC(=O)c1cncn1C(C)c2ccccc2,Train
+393,2-Nonanol,CCCCCCCC(C)O,Train
+1060,Thiram,CN(C)C(=S)SSC(=S)N(C)C ,Train
+901,Fenpropathrin,CC1(C)C(C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2)C1(C)C,Train
+375,butachlor,CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC ,Train
+412,acetazolamide,CC(=O)Nc1nnc(s1)S(N)(=O)=O ,Train
+74,Pentyl propanoate,CCCCC(=O)OCC,Train
+1055,2-Ethyl-1-hexanol,CCCCC(CC)CO,Train
+500,Dialifos,CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O,Train
+717,testosterone propionate,CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C ,Train
+114,2-aminoanthracene,Nc3ccc2cc1ccccc1cc2c3 ,Train
+417,"2,2',3,3'-PCB",Clc1cccc(c1Cl)c2cccc(Cl)c2Cl,Train
+601,"1,2-Dichlorobenzene",Clc1ccccc1Cl,Train
+604,Methoxsalen,COc2c1occc1cc3ccc(=O)oc23 ,Train
+89,RTI 24,CCN2c1cc(Cl)ccc1NC(=O)c3cccnc23 ,Train
+1079,Propylbenzene ,CCCc1ccccc1,Train
+498,Dicofol,OC(c1ccc(Cl)cc1)(c2ccc(Cl)cc2)C(Cl)(Cl)Cl,Train
+759,DEF,CCCCSP(=O)(SCCCC)SCCCC,Train
+904,Prometryn,CSc1nc(NC(C)C)nc(NC(C)C)n1,Train
+764,"2,4,5-Trichlorophenol ",Oc1cc(Cl)c(Cl)cc1Cl,Train
+11,2-Chloronapthalene,Clc1ccc2ccccc2c1,Train
+396,bromoxynil,Oc1c(Br)cc(C#N)cc1Br ,Train
+657,Quinoline,c1ccc2ncccc2c1,Train
+983,Ethanol,CCO,Train
+42,Cyclobutyl-5-spirobarbituric acid,O=C2NC(=O)C1(CCC1)C(=O)N2,Train
+167,3-Octanoyloxymethylphenytoin,O=C1N(COC(=O)CCCCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,Train
+416,o-Nitroaniline,Nc1ccccc1N(=O)=O,Train
+576,Prednisolone,CC12CC(O)C3C(CCC4=CC(=O)C=CC34C)C2CCC1(O)C(=O)CO,Train
+939,bromadiolone,OC(CC(c1ccccc1)c3c(O)c2ccccc2oc3=O)c4ccc(cc4)c5ccc(Br)cc5 ,Train
+704,p-Chloroaniline,Nc1ccc(Cl)cc1,Train
+426,Carvacrol,c1(O)c(C)ccc(C(C)C)c1,Train
+544,"2,4-Dimethylphenol",Cc1ccc(O)c(C)c1,Train
+1056,Diallate,CC(C)N(C(C)C)C(=O)SCC(=CCl)Cl,Train
+1106,Triadimefon,CC(C)(C)C(=O)C(Oc1ccc(Cl)cc1)n2cncn2,Train
+852,uric acid,O=c2[nH]c(=O)c1[nH]c(=O)[nH]c1[nH]2 ,Train
+767,Octane,CCCCCCCC,Train
+257,N-Ethylaniline,CCNc1ccccc1,Train
+335,"2,4-Dimethylpentane",CC(C)CC(C)C,Train
+15,2-Chloropropane,CC(C)Cl,Train
+785,Urea,NC(=O)N,Train
+324,"2',3,4-PCB",Clc1ccc(cc1)c2cccc(Cl)c2Cl ,Train
+948,2-Nonanone,CCCCCCCC(=O)C,Train
+941,Triallate,CC(C)N(C(C)C)C(=O)SCC(Cl)=C(Cl)Cl,Train
+222,2-bromonaphthalene,c1c(Br)ccc2ccccc12 ,Train
+179,Glutethimide,CCC1(CCC(=O)NC1=O)c2ccccc2 ,Train
+99,Isopropylbenzene ,CC(C)c1ccccc1,Train
+521,Siduron,CC1CCCCC1NC(=O)Nc2ccccc2,Train
+22,Phorate,CCOP(=S)(OCC)SCSCC,Train
+356,t-Crotonaldehyde,C/C=C/C=O,Train
+833,Benfluralin,CCCCN(CC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O,Train
+1047,Dimethyldisulfide,CSSC,Train
+611,Phenanthrene,c1ccc2c(c1)ccc3ccccc32,Train
+874,Cycloheptyl-5-spirobarbituric acid,O=C2NC(=O)C1(CCCCCC1)C(=O)N2 ,Train
+340,Cortisone,CC12CC(=O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO,Train
+431,Cyclohexane,C1CCCCC1,Train
+682,9-Methylanthracene,Cc1c2ccccc2cc3ccccc13,Train
+217,Carvone,CC(=C)C1CC=C(C)C(=O)C1,Train
+203,Phoxim,CCOP(=S)(OCC)ON=C(C#N)c1ccccc1,Train
+787,"1,3-Dibromobenzene",Brc1cccc(Br)c1,Train
+93,Propylisopropylether,CCCOC(C)C,Train
+695,aldosterone,CC13CCC(=O)C=C1CCC4C2CCC(C(=O)CO)C2(CC(O)C34)C=O ,Train
+68,Carbromal,CCC(Br)(CC)C(=O)NC(N)=O,Train
+1077,Pentyl acetate,CCCCCOC(=O)C,Train
+284,1-Chloroheptane,CCCCCCCCl,Train
+994,4-Methylpentanol,CC(C)CCCO,Train
+434,Equilenin,CC34CCc1c(ccc2cc(O)ccc12)C3CCC4=O,Train
+694,chloropropylate,c1ccc(Cl)cc1C(c2ccc(Cl)cc2)(O)C(=O)OC(C)C,Train
+153,1-Chloropentane,CCCCCCl,Train
+75,Isopentyl acetate,CC(C)CCOC(=O)C,Train
+911,"2,6-PCB",Clc1cccc(Cl)c1c2ccccc2 ,Train
+580,p-Hydroxybenzaldehyde ,Oc1ccc(C=O)cc1,Train
+446,3-Methyl-3-pentanol,CCC(C)(O)CC,Train
+188,Diosgenin,C1C(O)CCC2(C)CC3CCC4(C)C5(C)CC6OCC(C)CC6OC5CC4C3C=C21,Train
+271,4-Chloroanisole,COc1ccc(Cl)cc1,Train
+236,Phenylthiourea,NC(=S)Nc1ccccc1,Train
+487,Phenylmethanol,OCc1ccccc1,Train
+1090,Piperine,O=C(C=CC=Cc2ccc1OCOc1c2)N3CCCCC3,Train
+559,"2,3',4,4'-PCB",Clc1ccc(c(Cl)c1)c2ccc(Cl)c(Cl)c2Cl ,Train
+117,Anilofos,COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1,Train
+919,Methyl acetate,COC(=O)C,Train
+1010,Terbumeton,CCNc1nc(NC(C)(C)C)nc(OC)n1,Train
+512,3-methylindole,Cc1c[nH]c2ccccc12 ,Train
+633,hydrochlorothiazide,NS(=O)(=O)c2cc1c(NCNS1(=O)=O)cc2Cl ,Train
+915,p-Hydroxyacetanilide,CC(=O)Nc1ccc(O)cc1,Train
+872,Altretamine,CN(C)c1nc(nc(n1)N(C)C)N(C)C,Train
+740,Clonazepam,Clc1ccccc1C2=NCC(=O)Nc3ccc(cc23)N(=O)=O,Train
+126,dimethirimol,CCCCc1c(C)nc(nc1O)N(C)C ,Train
+116,Isoquinoline,c1ccc2cnccc2c1,Train
+473,Dicapthon,COP(=S)(OC)Oc1ccc(cc1Cl)N(=O)=O,Train
+861,Bendroflumethiazide,NS(=O)(=O)c3cc2c(NC(Cc1ccccc1)NS2(=O)=O)cc3C(F)(F)F,Train
+57,"1,4-Dimethylnaphthalene ",Cc1ccc(C)c2ccccc12,Train
+603,"2,2',3,3',4,4',5,5',6,6'-PCB",Clc1c(Cl)c(Cl)c(c(Cl)c1Cl)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl ,Train
+841,o-Xylene ,Cc1ccccc1C,Train
+656,Flurochloridone,FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O,Train
+786,1-Pentyne,CCCC#C,Train
+801,Carbazole,c1ccc2c(c1)[nH]c3ccccc32,Train
+105,Methyl formate,COC=O,Train
+635,Ethyl butyrate,CCCCCOC(=O)CC,Train
+369,Neburon,CCCCN(C)C(=O)Nc1ccc(Cl)c(Cl)c1,Train
+268,"1,2,4,5-Tetrabromobenzene",Brc1cc(Br)c(Br)cc1Br,Train
+655,Androsterone,CC12CCC(O)CC1CCC3C2CCC4(C)C3CCC4=O,Train
+46,p-Bromoacetanilide,CC(=O)Nc1ccc(Br)cc1,Train
+349,Ethyl propyl ether,CCCOCC,Train
+195,Oxadiazon,CC(C)Oc1cc(c(Cl)cc1Cl)n2nc(oc2=O)C(C)(C)C,Train
+102,L-arabinose,C1OC(O)C(O)C(O)C1O,Train
+4,Thiophene,c1ccsc1,Train
+984,Cyclopentyl-5-spirobarbituric acid,O=C2NC(=O)C1(CCCC1)C(=O)N2,Train
+859,Hexane ,CCCCCC,Train
+917,triamcinolone acetonide,CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO ,Train
+263,3-Pentanoyloxymethylphenytoin,O=C1N(COC(=O)CCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,Train
+933,Parathion,CCOP(=S)(OCC)Oc1ccc(cc1)N(=O)=O,Train
+443,Chlorobenzene,Clc1ccccc1,Train
+842,Butan-2-ol,CCC(C)O,Train
+923,Dibutyl ether ,CCCCOCCCC,Train
+945,1-Hexene,CCCCC=C,Train
+304,Lindane,ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl,Train
+341,glucose,OCC1OC(O)C(O)C(O)C1O,Train
+896,2-Methyl-2-hexanol,CCCCC(C)(C)O,Train
+313,"1,7-phenantroline",c1cnc2c(c1)ccc3ncccc23,Train
+149,5-fluorouracil,Fc1c[nH]c(=O)[nH]c1=O ,Train
+124,1-Decene,CCCCCCCCC=C,Train
+973,"1,2-Dinitrobenzene",O=N(=O)c1ccccc1N(=O)=O,Train
+1015,Benzo(a)fluorene,C1c2ccccc2c3ccc4ccccc4c13,Train
+697,4-Ethyltoluene,CCc1ccc(C)cc1,Train
+664,m-Fluorobromobenzene,Fc1cccc(Br)c1,Train
+50,1-Octyne ,CCCCCCC#C,Train
+353,Hexestrol,CCC(C(CC)c1ccc(O)cc1)c2ccc(O)cc2,Train
+1083,"1,2,4,5-Tetramethylbenzene",Cc1cc(C)c(C)cc1C,Train
+142,Trichloroethylene,ClC=C(Cl)Cl,Train
+470,3-Methyl-2-butanol,CC(C)C(C)O,Train
+653,2-Butoxyethanol,CCCCOCCO,Train
+399,5-hydroxyquinoline,Oc1cccc2ncccc12 ,Train
+781,2-Ethylbutanal,CCC(CC)C=O,Train
+320,Ancymidol,COc1ccc(cc1)C(O)(C2CC2)c3cncnc3 ,Train
+19,2-Undecanol,CCCCCCCCCC(C)O,Train
+684,Methyl butyl ether ,CCCCOC,Train
+1000,Ethyl formate,CCOC=O,Train
+977,Tricyclazole,Cc2cccc3sc1nncn1c23 ,Train
+999,p-Cresol,Cc1ccc(O)cc1,Train
+407,Chlortoluron,CN(C)C(=O)Nc1ccc(C)c(Cl)c1,Train
+537,Salicin,OCC2OC(Oc1ccccc1CO)C(O)C(O)C2O,Train
+991,aminopyrine,CN(C)c2c(C)n(C)n(c1ccccc1)c2=O ,Train
+1086,salicylanilide,c1ccccc1NC(=O)c2c(O)cccc2,Train
+38,Piperophos,CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C,Train
+175,3-Heptanoyloxymethylphenytoin,O=C1N(COC(=O)CCCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,Train
+245,Ipazine,CCN(CC)c1nc(Cl)nc(NC(C)C)n1,Train
+1023,4-Isopropyltoluene,CC(C)c1ccc(C)cc1,Train
+834,"2,4,6-Trimethylphenol",Cc1cc(C)c(O)c(C)c1,Train
+936,1-Nitronapthalene,O=N(=O)c1cccc2ccccc12,Train
+489,4-Bromophenol,Oc1ccc(Br)cc1,Train
+154,"1,3-Butadiene",C=CC=C,Train
+638,Bromoethane,CCBr,Train
+662,alloxan,O=C1NC(=O)C(=O)C(=O)N1 ,Train
+287,"1,1,2,2-Tetrachloroethane",ClC(Cl)C(Cl)Cl,Train
+625,RTI 17,CCN2c1ccccc1N(C)C(=S)c3cccnc23 ,Train
+685,7-methylpteridine,Cc2cnc1cncnc1n2,Train
+756,Medrogestone,CC(=O)C3(C)CCC4C2C=C(C)C1=CC(=O)CCC1(C)C2CCC34C,Train
+569,1-Heptene,CCCCCC=C,Train
+925,RTI 6,CCN2c1nc(N(C)(CCO))ccc1NC(=O)c3cccnc23 ,Train
+734,Nonane,CCCCCCCCC,Train
+17,Benzonitrile,N#Cc1ccccc1,Train
+127,Cyfluthrin,CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c2ccc(F)c(Oc3ccccc3)c2,Train
+322,Carbanilide,O=C(Nc1ccccc1)Nc2ccccc2,Train
+255,"2,4-Dimethyl-3-pentanol",CC(C)C(O)C(C)C,Train
+820,1-Bromopentane,CCCCCBr,Train
+1109,Dichlorophen,Oc1ccc(Cl)cc1Cc2cc(Cl)ccc2O,Train
+190,Ethyl nonanoate,CCCCCCCCC(=O)OCC,Train
+115,theobromine,Cn1cnc2n(C)c(=O)[nH]c(=O)c12 ,Train
+1103,4-Methyl-2-pentanol,CC(C)CC(C)O,Train
+772,"5,5-Diallylbarbital",O=C1NC(=O)NC(=O)C1(CC=C)CC=C,Train
+606,1-Methylnaphthalene,Cc1cccc2ccccc12,Train
+180,3-Methylpentane,CCC(C)CC,Train
+301,"1,1-Dichloroethane",CC(Cl)Cl,Train
+942,"1,5-Hexadiene ",C=CCCC=C,Train
+888,chlorothiazide,NS(=O)(=O)c2cc1c(N=CNS1(=O)=O)cc2Cl ,Train
+902,Methoprene,COC(C)(C)CCCC(C)CC=CC(C)=CC(=O)OC(C)C,Train
+853,"2,3,4,6-Tetrachlorophenol",Oc1c(Cl)cc(Cl)c(Cl)c1Cl,Train
+965,diisooctyl phthalate,c1(C(=O)OCCCCCC(C)(C))c(C(=O)OCCCCCC(C)(C))cccc1,Train
+828,Cyclohexyl-5-spirobarbituric acid,O=C2NC(=O)C1(CCCCC1)C(=O)N2,Train
+517,Fenoxycarb,CCOC(=O)NCCOc2ccc(Oc1ccccc1)cc2,Train
+372,Iodobenzene,Ic1ccccc1,Train
+45,2-Heptanol ,CCCCCC(C)O,Train
+476,Pirimicarb,CN(C)C(=O)Oc1nc(nc(C)c1C)N(C)C,Train
+157,chloroacetamide,NC(=O)CCl ,Train
+926,2-Methyl-2-pentanol,CCCC(C)(C)O,Train
+171,Meprobamate,CCCC(C)(COC(N)=O)COC(N)=O ,Train
+16,2-Methylbutanol,CCC(C)CO,Train
+511,"Sparsomycin (3,8mg/ml)",CSCS(=O)CC(CO)NC(=O)C=Cc1c(C)[nH]c(=O)[nH]c1=O,Train
+48,nifedipine,COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C ,Train
+191,metalaxyl,COCC(=O)N(C(C)C(=O)OC)c1c(C)cccc1C ,Train
+546,ampyrone,Cc2c(N)c(=O)n(c1ccccc1)n2C,Train
+515,isocarbamid,C1N(C(=O)NCC(C)C)C(=O)NC1,Train
+848,allicin,C=CCS(=O)SCC=C,Train
+924,1-Dodecanol,CCCCCCCCCCCCO,Train
+480,Metolachlor,CCc1cccc(C)c1N(C(C)COC)C(=O)CCl ,Train
+283,2-Ethyltoluene,CCc1ccccc1C,Train
+894,Propazine,CC(C)Nc1nc(Cl)nc(NC(C)C)n1,Train
+816,Ethinyl estradiol,CC34CCC1C(CCc2cc(O)ccc12)C3CCC4(O)C#C ,Train
+225,nevirapine,Cc3ccnc4N(C1CC1)c2ncccc2C(=O)Nc34 ,Train
+26,Theophylline,Cn1c(=O)n(C)c2nc[nH]c2c1=O,Train
+969,1-Pentadecanol,CCCCCCCCCCCCCCCO,Train
+1080,"1,2-Dichlorotetrafluoroethane",FC(F)(Cl)C(F)(F)Cl,Train
+437,"1,2-Dichloroethane",ClCCCl,Train
+1097,Eicosane,CCCCCCCCCCCCCCCCCCCC,Train
+364,Hydrocortisone ,CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO,Train
+229,Fenthion,COP(=S)(OC)Oc1ccc(SC)c(C)c1,Train
+37,Fenothiocarb,CN(C)C(=O)SCCCCOc1ccccc1,Train
+669,cytosine,Nc1cc[nH]c(=O)n1 ,Train
+749,borneol,CC1(C)C2CCC1(C)C(O)C2,Train
+1110,Desmedipham,CCOC(=O)Nc2cccc(OC(=O)Nc1ccccc1)c2 ,Train
+374,Methocarbamol,COc1ccccc1OCC(O)COC(N)=O,Train
+469,"2,6-Dimethylphenol",Cc1cccc(C)c1O,Train
+1111,Anthraquinone,O=C1c2ccccc2C(=O)c3ccccc13,Train
+687,"N,N-Dimethylacetamide",CN(C)C(=O)C,Train
+32,Phenmedipham,COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1,Train
+875,Fructose,OCC1OC(O)(CO)C(O)C1O,Train
+905,Buturon,CC(C#C)N(C)C(=O)Nc1ccc(Cl)cc1,Train
+194,2-Napthol,Oc1ccc2ccccc2c1,Train
+1042,"2,2',4,4',5,5'-PCB",Clc1cc(Cl)c(cc1Cl)c2cc(Cl)c(Cl)cc2Cl ,Train
+1049,o-Chlorobromobenzene,Clc1ccccc1Br,Train
+503,p-Phenylphenol,Oc1ccc(cc1)c2ccccc2,Train
+847,4-hexylresorcinol,c1(O)cc(O)ccc1CCCCCC,Train
+1112,2-Octanol,CCCCCCC(C)O,Train
+1026,d-inositol,OC1C(O)C(O)C(O)C(O)C1O,Train
+800,2-Nitropropane,CC(C)N(=O)=O,Train
+579,p-terphenyl,c1ccc(cc1)c2ccc(cc2)c3ccccc3,Train
+160,Metribuzin,CSc1nnc(c(=O)n1N)C(C)(C)C,Train
+680,Guaiacol,COc1ccccc1O ,Train
+1063,"3,3-Dimethylpentane",CCC(C)(C)CC,Train
+162,Caproaldehyde,CCCCCC=O,Train
+821,trans-2-Heptene ,CCCC/C=C/C,Train
+705,"2,2-Dimethylpentanol",CCCC(C)(C)CO,Train
+873,"2,4-Dimethyl-2-pentanol ",CC(C)CC(C)(C)O,Train
+152,1-Hexanol,CCCCCCO,Train
+849,Coumaphos,CCOP(=S)(OCC)Oc2ccc1oc(=O)c(Cl)c(C)c1c2,Train
+869,Naled,COP(=O)(OC)OC(Br)C(Cl)(Cl)Br,Train
+938,isoguanine,Nc1nc(O)nc2nc[nH]c12 ,Train
+111,Niclosamide,Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O,Train
+226,Isazofos,CCOP(=S)(OCC)Oc1nc(Cl)n(n1)C(C)C,Train
+1107,Isocarboxazid,Cc1cc(no1)C(=O)NNCc2ccccc2,Train
+103,Dichloromethane,ClCCl,Train
+421,Chlorazine,CCN(CC)c1nc(Cl)nc(n1)N(CC)CC,Train
+419,"2,6-Dinitrotoluene",Cc1c(cccc1N(=O)=O)N(=O)=O,Train
+932,Pteridine,c2cnc1ncncc1n2,Train
+586,"2,3,4,5,6-PCB",Clc2c(Cl)c(Cl)c(c1ccccc1)c(Cl)c2Cl ,Train
+966,Corticosterone,CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO,Train
+672,"O,P'-DDD",ClC(Cl)C(c1ccc(Cl)cc1)c2ccccc2Cl ,Train
+119,2-Chlorobiphenyl,Clc1ccccc1c2ccccc2,Train
+53,Bromacil,CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O ,Train
+151,"1,3-Benzenediol",Oc1cccc(O)c1,Train
+403,Bromochloromethane,ClCBr,Train
+1118,Isobutyl acetate,CC(C)COC(=O)C,Train
+207,6-hydroxyquinoline,Oc2ccc1ncccc1c2 ,Train
+1067,dexamethasone acetate,CC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O)C(=O)COC(C)=O ,Train
+658,methyl gallate,COC(=O)c1cc(O)c(O)c(O)c1 ,Train
+1035,"2,4-Dimethyl-3-pentanone",CC(C)C(=O)C(C)C,Train
+946,Xipamide,Cc1cccc(C)c1NC(=O)c2cc(c(Cl)cc2O)S(N)(=O)=O,Train
+8,Dieldrin,ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl,Train
+998,2-Methylbutan-2-ol,CCC(C)(C)O,Train
+36,Diphenylamine,N(c1ccccc1)c2ccccc2,Train
+452,1-Chloronapthalene,Clc1cccc2ccccc12,Train
+651,"1,1-Diethoxyethane ",CCOC(C)OCC,Train
+253,O-Ethyl carbamate,CCOC(=O)N,Train
+303,Isopropalin,CCCN(CCC)c1c(cc(cc1N(=O)=O)C(C)C)N(=O)=O,Train
+928,stadacaine,CCCCOc1ccc(C(=O)OCC)c(c1)N(CC)CC ,Train
+571,Pentobarbital,O=C1NC(=O)NC(=O)C1(CC)C(C)CCC,Train
+623,6-aminochrysene,Nc3cc2c1ccccc1ccc2c4ccccc34 ,Train
+900,butallylonal,CCC(C)C1(CC(Br)=C)C(=O)NC(=O)NC1=O ,Train
+895,2-Methylpentanol,CCCC(C)CO,Train
+885,Lorazepam,OC3N=C(c1ccccc1Cl)c2cc(Cl)ccc2NC3=O,Train
+262,TEFLUBENZURON,Fc1cccc(F)c1C(=O)NC(=O)Nc2cc(Cl)c(F)c(Cl)c2F ,Train
+610,Menadione,CC2=CC(=O)c1ccccc1C2=O ,Train
+297,"2,2',3,3',4,4',5,5'-PCB",Clc1cc(c(Cl)c(Cl)c1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl,Train
+414,Aldrin,ClC1=C(Cl)C2(Cl)C3C4CC(C=C4)C3C1(Cl)C2(Cl)Cl,Train
+150,tubercidin,Nc1ncnc2n(ccc12)C3OC(CO)C(O)C3O ,Train
+1102,Methylcyclopentane,CC1CCCC1,Train
+778,Khellin,COc2c1occc1c(OC)c3c(=O)cc(C)oc23 ,Train
+640,Digitoxin,CC1OC(CC(O)C1O)OC2C(O)CC(OC2C)OC8C(O)CC(OC7CCC3(C)C(CCC4C3CCC5(C)C(CCC45O)C6=CC(=O)OC6)C7)OC8C ,Train
+1119,"2,2,3-Trimethylbutane",CC(C)C(C)(C)C,Train
+1062,1-Decanol,CCCCCCCCCCO,Train
+550,3-Methyl-2-pentanol,CCC(C)CCO,Train
+978,2-Octanone,CCCCCCC(=O)C,Train
+488,Coumatetralyl,O=c2c(C3CCCc4ccccc43)c(O)c1ccccc1o2 ,Train
+819,Napthacene,c1ccc2cc3cc4ccccc4cc3cc2c1,Train
+710,kebuzone,CC(=O)CCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3,Train
+1014,Niridazole,O=C1NCCN1c2ncc(s2)N(=O)=O,Train
+147,Amobarbital,CCC1(CCC(C)C)C(=O)NC(=O)NC1=O,Train
+146,Methanol,CO,Train
+1084,norethindrone acetate,CC(=O)OC3(CCC4C2CCC1=CC(=O)CCC1C2CCC34C)C#C,Train
+345,"1,4-Dinitrobenzene",O=N(=O)c1ccc(cc1)N(=O)=O,Train
+920,Stanolone,CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O ,Train
+1058,Nitrapyrin,Clc1cccc(n1)C(Cl)(Cl)Cl,Train
+659,fluconazole,OC(Cn1cncn1)(Cn2cncn2)c3ccc(F)cc3F ,Train
+770,Propionaldehyde,CCC=O,Train
+348,Fenuron,CN(C)C(=O)Nc1ccccc1,Train
+463,3-chloropropionitrile,ClCCC#N ,Train
+325,Isoproturon,CC(C)c1ccc(NC(=O)N(C)C)cc1,Train
+186,Pyridazine,c1ccnnc1,Train
+123,m-Nitrophenol,Oc1cccc(c1)N(=O)=O,Train
+1041,Diphenyl ether ,O(c1ccccc1)c2ccccc2,Train
+608,"3,3-Dimethyl-2-butanol",CC(O)C(C)(C)C,Train
+143,1-Napthylamine,Nc1cccc2ccccc12,Train
+751,Heptane,CCCCCCC,Train
+1104,RTI 11,O2c1ccc(N)cc1N(C)C(=O)c3cc(C)ccc23 ,Train
+197,1-Nonyne ,CCCCCCCC#C,Train
+609,Methyl pentanoate,CCCC(=O)OCC,Train
+883,Hydrocortisone 21-acetate,CC(=O)OCC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3C(O)CC21C,Train
+836,p-Chloroiodobenzene,Clc1ccc(I)cc1,Train
+279,Pyrolan,CN(C)C(=O)Oc1cc(C)nn1c2ccccc2,Train
+293,Equilin,CC34CCC1C(=CCc2cc(O)ccc12)C3CCC4=O,Train
+1027,Dyphylline,Cn2c(=O)n(C)c1ncn(CC(O)CO)c1c2=O,Train
+400,Carboxin,CC1=C(SCCO1)C(=O)Nc2ccccc2,Train
+122,Pentachlorobenzene,Clc1cc(Cl)c(Cl)c(Cl)c1Cl,Train
+183,Chloroacetonitrile,ClCC#N,Train
+202,Propyne,CC#C,Train
+438,2-Chloro-2-methylbutane,CCC(C)(C)Cl,Train
+835,Benzene ,c1ccccc1,Train
+246,Benzocaine,CCOC(=O)c1ccc(N)cc1,Train
+415,Tetrahydrofurane ,C1CCOC1,Train
+962,"2,4,6-PCB",Clc1ccc(cc1)c2c(Cl)cccc2Cl ,Train
+949,Mebendazole,COC(=O)Nc2nc1ccc(cc1[nH]2)C(=O)c3ccccc3,Train
+1072,Diethyl phthalate ,CCOC(=O)c1ccccc1C(=O)OCC,Train
+953,Ethyne,C#C,Train
+52,Chrysene,c1ccc2c(c1)ccc3c4ccccc4ccc23,Train
+129,1-Bromoheptane,CCCCCCCBr,Train
+637,Benzo(a)pyrene,c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45,Train
+402,Pentachlorophenol,Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,Train
+971,"5,5-Dimethylbarbituric acid",O=C1NC(=O)NC(=O)C1(C)C,Train
+956,Mecarbam,CCOC(=O)N(C)C(=O)CSP(=S)(OCC)OCC,Train
+735,2-Chlorophenol,Oc1ccccc1Cl,Train
+854,"1,3-Dichlorobenzene",Clc1cccc(Cl)c1,Train
+1075,Diiodomethane,ICI,Train
+219,"Etoposide (148-167,25mg/ml)",COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67,Train
+641,2-Methyl-1-Butene,CCC(=C)C,Train
+1,Fenfuram,Cc1occc1C(=O)Nc2ccccc2,Train
+934,Methane,C,Train
+996,bromopropylate,CC(C)OC(=O)C(O)(c1ccc(Br)cc1)c2ccc(Br)cc2 ,Train
+80,Formothion,COP(=S)(OC)SCC(=O)N(C)C=O,Train
+624,Estrone,CC12CCC3C(CCc4cc(O)ccc34)C2CCC1=O,Train
+1031,"1,2-Dibromobenzene",Brc1ccccc1Br,Train
+944,Androstenedione,CC34CCC1C(CCC2=CC(=O)CCC12C)C3CCC4=O,Train
+386,aminothiazole,Nc1nccs1 ,Train
+1114,Butylbenzene,CCCCc1ccccc1,Train
+806,"2,3-Dimethylpentane",CCC(C)C(C)C,Train
+509,"1,4-Dichlorobenzene",Clc1ccc(Cl)cc1,Train
+267,1-Bromobutane,CCCCBr,Train
+1011,3-Methylheptane,CCCCC(C)CC,Train
+441,Lactose,OCC1OC(OC2C(O)C(O)C(O)OC2CO)C(O)C(O)C1O,Train
+496,1-aminoacridine,Nc2cccc3nc1ccccc1cc23 ,Train
+829,dimetan,CN(C)C(=O)OC1=CC(=O)CC(C)(C)C1 ,Train
+112,Pentane,CCCCC,Train
+691,5-Allyl-5-ethylbarbital,O=C1NC(=O)NC(=O)C1(CC)CC=C,Train
+232,Epiandrosterone,CC34CCC1C(CCC2CC(O)CCC12C)C3CCC4=O,Train
+471,benzhydrol,c1ccccc1C(O)c2ccccc2,Train
+607,Napropamide,CCN(CC)C(=O)C(C)Oc1cccc2ccccc12 ,Train
+671,Propionitrile,CCC#N,Train
+373,Metolazone,CC2Nc1cc(Cl)c(cc1C(=O)N2c3ccccc3C)S(N)(=O)=O ,Train
+826,"1,1,1-Trichloroethane",CC(Cl)(Cl)Cl,Train
+663,"1,3-Dichloropropane",ClCCCCl,Train
+1034,RTI 20,C2c1ccccc1N(CCF)C(=O)c3ccccc23 ,Train
+233,mannitol,OCC(O)C(O)C(O)C(O)CO ,Train
+818,Di-n-propylsulfide,CCCSCCC,Train
+972,2-Iodopropane,CC(C)I,Train
+676,Benzo[ghi]perylene,c1cc2ccc3ccc4ccc5cccc6c(c1)c2c3c4c56,Train
+317,uracil,O=c1cc[nH]c(=O)[nH]1 ,Train
+648,Eugenol,COc1cc(CC=C)ccc1O,Train
+410,Thiamphenicol,CS(=O)(=O)c1ccc(cc1)C(O)C(CO)NC(=O)C(Cl)Cl ,Train
+1066,Butyraldehyde,CCCC=O,Train
+709,t-Butylbenzene ,CC(C)(C)c1ccccc1,Train
+358,"9,10-Dimethylanthracene",Cc1c2ccccc2c(C)c3ccccc13,Train
+258,Phenytoin,O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3,Train
+744,Cyhalothrin,CC1(C)C(C=C(Cl)C(F)(F)F)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,Train
+627,Nitrazepam,O=C3CN=C(c1ccccc1)c2cc(ccc2N3)N(=O)=O,Train
+632,"1,5-Dimethlnapthalene",Cc1cccc2c(C)cccc12,Train
+980,"1,4-Difluorobenzene",Fc1ccc(F)cc1,Train
+282,"5,5-Diisopropylbarbital",O=C1NC(=O)NC(=O)C1(C(C)C)C(C)C,Train
+376,"2,3-Dichlorophenol",Oc1cccc(Cl)c1Cl,Train
+384,1-Octene ,CCCCCCC=C,Train
+224,6-methoxypteridine,COc2cnc1ncncc1n2,Train
+1101,"cis 1,2-Dichloroethylene",Cl\C=C/Cl,Train
+1005,Tetrachloroethylene,ClC(=C(Cl)Cl)Cl,Train
+472,Methyl decanoate,CCCCCCCCCC(=O)OC,Train
+347,Ethyl decanoate,CCCCCCCCCC(=O)OCC,Train
+505,Ethyl vinyl ether,CCOC=C,Train
+639,3-Hexyne,CCC#CCC,Train
+1121,Phthalonitrile,N#Cc1ccccc1C#N,Train
+1098,hydrazobenzene,N(Nc1ccccc1)c2ccccc2 ,Train
+797,D-fenchone,CC2(C)C1CCC(C)(C1)C2=O,Train
+339,Acridine,c3ccc2nc1ccccc1cc2c3,Train
+555,"Digoxin (L1=41,8mg/mL, L2=68,2mg/mL, Z=40,1mg/mL)",CC1OC(CC(O)C1O)OC2C(O)CC(OC2C)OC8C(O)CC(OC7CCC3(C)C(CCC4C3CC(O)C5(C)C(CCC45O)C6=CC(=O)OC6)C7)OC8C ,Train
+619,m-Nitroaniline,Nc1cccc(c1)N(=O)=O,Train
+27,Butethal,CCCCC1(CC)C(=O)NC(=O)NC1=O,Train
+993,p-Nitrotoluene,Cc1ccc(cc1)N(=O)=O,Train
+645,"1,3,5-Tribromobenzene",Brc1cc(Br)cc(Br)c1,Train
+952,Carbaryl,CNC(=O)Oc1cccc2ccccc12,Train
+573,3-Chloroanisole,COc1cccc(Cl)c1,Train
+556,Benzyltrifluoride,FC(F)(F)c1ccccc1,Train
+681,chlorpyrifos,CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl ,Train
+577,Bromodichloromethane,BrC(Cl)Cl,Train
+795,biquinoline,c2ccc1nc(ccc1c2)c4ccc3ccccc3n4 ,Train
+85,Hexachloroethane,ClC(Cl)(Cl)C(Cl)(Cl)Cl,Train
+242,Trichloroacetonitrile,ClC(Cl)(Cl)C#N,Train
+698,Diisopropylsulfide,CC(C)SC(C)C,Train
+838,propachlor,CC(C)N(C(=O)CCl)c1ccccc1 ,Train
+159,4-Chlorotoluene,Cc1ccc(Cl)cc1,Train
+524,3-Methylbutan-1-ol,CC(C)CCO,Train
+35,Valeraldehyde,CCCCC=O,Train
+540,1-Propanol,CCCO,Train
+170,"1,2,3,4-Tetrachlorobenzene",Clc1ccc(Cl)c(Cl)c1Cl,Train
+654,Quintozene,Clc1c(Cl)c(Cl)c(N(=O)=O)c(Cl)c1Cl,Train
+748,fensulfothion,CCOP(=S)(OCC)Oc1ccc(cc1)S(C)=O ,Train
+1045,XMC,CNC(=O)Oc1cc(C)cc(C)c1,Train
+1037,gentisin,c1c(O)C2C(=O)C3cc(O)ccC3OC2cc1(OC),Train
+484,Tribromomethane,BrC(Br)Br,Train
+733,alloxantin,C1(=O)NC(=O)NC(=O)C1(O)C2(O)C(=O)NC(=O)NC2(=O),Train
+899,Heptachlor,ClC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,Train
+95,diethylstilbestrol,CCC(=C(CC)c1ccc(O)cc1)c2ccc(O)cc2 ,Train
+563,Dimethyl phthalate,COC(=O)c1ccccc1C(=O)OC,Train
+240,Cyclohexanone,O=C1CCCCC1,Train
+742,Chlorbufam,CC(OC(=O)Nc1cccc(Cl)c1)C#C,Train
+863,Vinclozolin,CC1(OC(=O)N(C1=O)c2cc(Cl)cc(Cl)c2)C=C,Train
+574,Pebulate,CCCCN(CC)C(=O)SCCC,Train
+690,"3,3-Dimethyl-1-butanol",CC(C)(C)CCO,Train
+460,1-Pentanol,CCCCCO,Train
+891,Diphenylmethane,C(c1ccccc1)c2ccccc2,Train
+553,1-Iodobutane,CCCCI,Train
+857,thioanisole,c1ccccc1SC,Train
+1054,1-Methylphenanthrene,Cc1cccc2c1ccc3ccccc32,Train
+206,Hypoxanthine,O=c1[nH]cnc2nc[nH]c12 ,Train
+392,Aminocarb,CNC(=O)Oc1ccc(N(C)C)c(C)c1,Train
+794,Acetophenone,CC(=O)c1ccccc1,Train
+870,Biphenyl,c1ccc(cc1)c2ccccc2,Train
+397,"3,4-PCB",Clc1ccc(cc1Cl)c2ccccc2 ,Train
+766,3-Methyl-3-hexanol,CCCC(C)(O)CC,Train
+1038,Caffeine,Cn1cnc2n(C)c(=O)n(C)c(=O)c12,Train
+1028,Chloramphenicol,OCC(NC(=O)C(Cl)Cl)C(O)c1ccc(cc1)N(=O)=O,Train
+642,8-quinolinol,Oc1cccc2cccnc12 ,Train
+612,"2,4-Dimethylpyridine",Cc1ccnc(C)c1,Train
+960,Disulfoton,CCOP(=S)(OCC)SCCSCC,Train
+725,Fenarimol,OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl,Train
+683,Antipyrene,Cc1cc(=O)n(c2ccccc2)n1C,Train
+98,styrene oxide,C1OC1c2ccccc2 ,Train
+804,Azodrin,CNC(=O)C=C(C)OP(=O)(OC)OC,Train
+406,benzylurea,NC(=O)NCc1ccccc1 ,Train
+502,Methazole,Cn2c(=O)on(c1ccc(Cl)c(Cl)c1)c2=O,Train
+929,2-Methyl-2-heptanol,CCCCCC(C)(C)O,Train
+779,5-Ethyl-5-(3-methylbutyl)barbital,O=C1NC(=O)NC(=O)C1(CC)CCC(C)C,Train
+200,Dapsone,Nc1ccc(cc1)S(=O)(=O)c2ccc(N)cc2,Train
+134,d-Limonene,CC1=CCC(CC1)C(C)=C,Train
+40,3-Chlorobiphenyl,c1c(Cl)cccc1c2ccccc2,Train
+1017,Bromophos,COP(=S)(OC)Oc1cc(Cl)c(Br)cc1Cl,Train
+230,Cyclohexanol ,OC1CCCCC1,Train
+378,Propanil,CCC(=O)Nc1ccc(Cl)c(Cl)c1,Train
+288,RTI 23,CCN2c1cc(OC)cc(C)c1NC(=O)c3cccnc23 ,Train
+418,phenylbutazone,CCCCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3 ,Train
+391,"1,2,3-Trimethylbenzene ",Cc1cccc(C)c1C,Train
+592,piroxicam,CN2C(=C(O)c1ccccc1S2(=O)=O)C(=O)Nc3ccccn3 ,Train
+647,methylthiouracil,Cc1cc(=O)[nH]c(=S)[nH]1,Train
+520,1-Butanol,CCCCO,Train
+64,Benznidazole,O=C(Cn1ccnc1N(=O)=O)NCc2ccccc2,Train
+14,Tetradecane,CCCCCCCCCCCCCC,Train
+492,"1,3,5-Trinitrobenzene",O=N(=O)c1cc(cc(c1)N(=O)=O)N(=O)=O,Train
+379,Triamterene,Nc3nc(N)c2nc(c1ccccc1)c(N)nc2n3,Train
+187,"1,2,3,5-Tetrachlorobenzene",Clc1cc(Cl)c(Cl)c(Cl)c1,Train
+763,"1,2,4-Trimethylbenzene",Cc1ccc(C)c(C)c1,Train
+216,"2,3-Dimethylpyridine",Cc1cccnc1C,Train
+791,Isonazid,c1nccc(C(=O)NN)c1,Train
+878,p-Chloroacetanilide,CC(=O)Nc1ccc(Cl)cc1,Train
+337,ethofumesate,CCOC2Oc1ccc(OS(C)(=O)=O)cc1C2(C)C,Train
+719,allopurinol,O=c1[nH]cnc2[nH]ncc12 ,Train
+295,p-Nitroanisole,COc1ccc(cc1)N(=O)=O,Train
+1016,2-Chloroanisole,COc1ccccc1Cl,Train
+455,Propylcyclopentane,CCCC1CCCC1,Train
+815,1-Chloro-2-methylpropane,ClCC(C)C,Train
+269,4-Methyl-2-pentanone,CC(C)CC(=O)C,Train
+995,Norethisterone,CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C,Train
+201,Methyl hydrazine,CNN,Train
+161,Tricresyl phosphate,Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1,Train
+729,"2,2',3,5'-PCB",Clc1ccc(Cl)c(c1)c2cccc(Cl)c2Cl ,Train
+401,Ethoxyzolamide,CCOc2ccc1nc(sc1c2)S(N)(=O)=O ,Train
+702,cortisone acetate,CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)CCC1(C)C2C(=O)CC34C ,Train
+565,Diethyldisulfide,CCSSCC,Train
+1021,Chloroxuron,CN(C)C(=O)Nc2ccc(Oc1ccc(Cl)cc1)cc2,Train
+1025,Sucrose,OCC2OC(OC1(CO)OC(CO)C(O)C1O)C(O)C(O)C2O ,Train
+205,Acrolein,C=CC=O,Train
+34,1-Methylfluorene,Cc1cccc2c1Cc3ccccc32,Train
+775,Pencycuron,Clc1ccc(CN(C2CCCC2)C(=O)Nc3ccccc3)cc1,Train
+508,3-Methyl-3-heptanol,CCCCC(C)(O)CC,Train
+1113,Oxycarboxin,CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1,Train
+91,thiamylal,CCCC(C)C1(CC=C)C(=O)NC(=S)NC1=O ,Train
+897,Ethylbenzene,CCc1ccccc1,Train
+564,Ethyl octanoate,CCCCCCCC(=O)OCC,Train
+776,1-Methylcyclohexene ,CC1=CCCCC1,Train
+241,m-Methylaniline,Cc1cccc(N)c1,Train
+13,Primidone,CCC1(C(=O)NCNC1=O)c2ccccc2,Train
+315,Anethole,COc1ccc(C=CC)cc1,Train
+600,Ethane,CC,Train
+387,Metolcarb,c1ccccc1(OC(=O)NC),Train
+166,"2,4'-PCB",Clc1ccc(cc1)c2ccccc2Cl ,Train
+840,Dimethoxymethane,COCOC,Train
+20,"2,2',3,4,6-PCB",Clc1ccc(c(Cl)c1)c2c(Cl)ccc(Cl)c2Cl ,Train
+646,Ronnel,COP(=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl,Train
+831,Diethyl ether ,CCOCC,Train
+562,hydrobenzoin,c1ccccc1C(O)C(O)c2ccccc2,Train
+1100,4-hydroxypyridine,Oc1ccncc1,Train
+686,simazine,CCNc1nc(Cl)nc(NCC)n1 ,Train
+957,1-Phenylethanol,CC(O)c1ccccc1,Train
+189,o-Aminophenol,Nc1ccccc1O,Train
+975,Hexadecane,CCCCCCCCCCCCCCCC,Train
+699,"1,3-Dinitrobenzene",O=N(=O)c1cccc(c1)N(=O)=O,Train
+510,3-Ethanoyloxymethylphenytoin,O=C1N(COC(=O)C)C(=O)C(N1)(c2ccccc2)c3ccccc3,Train
+1082,tetramethylurea,CN(C)C(=O)N(C)C ,Train
+474,1-Bromo-2-methylpropane,CC(C)CBr,Train
+856,Isobutyl formate,CC(C)COC=O,Train
+747,2-Methyl-3-pentanol,CCC(O)C(C)C,Train
+252,2-Bromotoluene,Cc1ccccc1Br,Train
+21,Lenacil,O=c2[nH]c1CCCc1c(=O)n2C3CCCCC3,Train
+459,Benzoxazole,c2ccc1ocnc1c2,Train
+276,Sorbitol,OCC(O)C(O)C(O)C(O)CO,Train
+955,"1,4-Cyclohexadiene",C1C=CCC=C1,Train
+385,p-Methylaniline ,Cc1ccc(N)cc1,Train
+805,Succinimide,O=C1CCC(=O)N1,Train
+343,Indapamide,CC2Cc1ccccc1N2NC(=O)c3ccc(Cl)c(c3)S(N)(=O)=O ,Train
+769,Phenylhydrazine,NNc1ccccc1,Train
+130,"3,4-Dimethylpyridine",Cc1ccncc1C,Train
+871,"2,2',4,4',6,6'-PCB",Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl ,Train
+87,1-Nitropropane,CCCN(=O)=O,Train
+330,Bensulide,CC(C)OP(=S)(OC(C)C)SCCNS(=O)(=O)c1ccccc1,Train
+466,o-Chloroiodobenzene,Clc1ccccc1I,Train
+121,"2,3,4-Trimethylpentane",CC(C)C(C)C(C)C,Train
+1044,Thiophenol ,Sc1ccccc1,Train
+1095,Eriodictyol,Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3,Train
+860,methyl nicotinate,COC(=O)c1cccnc1 ,Train
+1126,2-Methylbutane,CCC(C)C,Train
+566,"1,2-Diethoxyethane ",CCOCCOCC,Validation
+988,Mirex,ClC1(C2(Cl)C3(Cl)C4(Cl)C5(Cl)C1(Cl)C3(Cl)Cl)C5(Cl)C(Cl)(Cl)C24Cl,Validation
+1033,oryzalin,CCCN(CCC)c1c(cc(cc1N(=O)=O)S(N)(=O)=O)N(=O)=O,Validation
+560,"2,2',3,3',4,4'-PCB",Clc1ccc(c(Cl)c1Cl)c2ccc(Cl)c(Cl)c2Cl ,Validation
+1002,Decalin,C1CCC2CCCCC2C1,Validation
+351,2-Methylnapthalene,Cc1ccc2ccccc2c1,Validation
+12,1-Pentene ,CCCC=C,Validation
+943,Indole,c2ccc1[nH]ccc1c2,Validation
+570,Ethirimol,CCCCc1c(C)nc(NCC)[nH]c1=O,Validation
+739,Terbacil,Cc1[nH]c(=O)n(c(=O)c1Cl)C(C)(C)C,Validation
+59,2-Pentanone,CCCC(=O)C,Validation
+334,m-Chloroaniline,Nc1cccc(Cl)c1,Validation
+1036,5-(3-Methyl-2-butenyl)-5-isoPrbarbital,O=C1NC(=O)NC(=O)C1(C(C)C)CC=C(C)C,Validation
+543,benzoin,OC(C(=O)c1ccccc1)c2ccccc2,Validation
+274,Fenitrothion,COP(=S)(OC)Oc1ccc(N(=O)=O)c(C)c1,Validation
+890,2-Phenoxyethanol,OCCOc1ccccc1,Validation
+548,"Hexachloro-1,3-butadiene",ClC(=C(Cl)C(=C(Cl)Cl)Cl)Cl,Validation
+997,Pyrazon,Nc2cnn(c1ccccc1)c(=O)c2Cl,Validation
+352,Chlorodibromethane,ClC(Br)Br,Validation
+243,norflurazon,CNc2cnn(c1cccc(c1)C(F)(F)F)c(=O)c2Cl,Validation
+449,Glafenine,OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23,Validation
+388,3-Hexanol,CCCC(O)CC,Validation
+765,phenanthridine,c1ccc2c(c1)cnc3ccccc23 ,Validation
+308,"3,4-Dichloronitrobenzene",O=N(=O)c1cc(Cl)c(Cl)cc1,Validation
+83,p-Xylene ,Cc1ccc(C)cc1,Validation
+1057,Toluene ,Cc1ccccc1,Validation
+668,"2,2',3,4,5,5'-PCB",Clc1ccc(Cl)c(c1)c2cc(Cl)c(Cl)c(Cl)c2Cl,Validation
+1004,Benzo(e)pyrene,c1ccc2c(c1)c3cccc4ccc5cccc2c5c43,Validation
+549,Terbutryn,CCNc1nc(NC(C)(C)C)nc(SC)n1,Validation
+174,cycloheximide,CC1CC(C)C(=O)C(C1)C(O)CC2CC(=O)NC(=O)C2 ,Validation
+864,Cyanazine,CCNc1nc(Cl)nc(NC(C)(C)C#N)n1,Validation
+1040,"3,4-Dimethylphenol",Cc1ccc(O)cc1C,Validation
+342,3-Methylphenol,Cc1cccc(O)c1,Validation
+542,2-Pentanol,CCCC(C)O,Validation
+497,Benzo(k)fluoranthene,c1ccc2cc3c4cccc5cccc(c3cc2c1)c45,Validation
+967,"1,3,5-Trimethylbenzene ",Cc1cc(C)cc(C)c1,Validation
+178,5-Nonanone,CCCCC(=O)CCCC,Validation
+109,Inosine,OCC1OC(C(O)C1O)n2cnc3c(O)ncnc23,Validation
+78,1-Bromopropane,CCCBr,Validation
+809,RTI 9,O2c1ccccc1N(CC)C(=O)c3ccccc23 ,Validation
+275,1-Iodonapthalene,Ic1cccc2ccccc12,Validation
+425,Secobarbital,O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C,Validation
+120,2-Methyl-1-Pentene,CCCC(=C)C,Validation
+813,3-Methylcholanthrene,c1cc(C)cc2c1c3cc4cccc5CCc(c45)c3cc2,Validation
+101,chlorquinox,c2(Cl)c(Cl)c(Cl)c1nccnc1c2(Cl) ,Validation
+1122,m-Nitrotoluene,Cc1cccc(c1)N(=O)=O,Validation
+30,"1,4-Diethylbenzene ",CCc1ccc(CC)cc1,Validation
+100,Deoxycorticosterone,CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO,Validation
+649,5-Allyl-5-isopropylbarbital,O=C1NC(=O)NC(=O)C1(C(C)C)CC=C,Validation
+458,Cypermethrin,CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,Validation
+846,hydantoin,O=C1CNC(=O)N1 ,Validation
+745,Apazone,CCCC1C(=O)N3N(C1=O)c2cc(C)ccc2N=C3N(C)C ,Validation
+990,Benomyl,CCCCNC(=O)n1c(NC(=O)OC)nc2ccccc12,Validation
+918,guanine,Nc2nc1[nH]cnc1c(=O)[nH]2 ,Validation
+332,Propyl formate,CCCOC=O,Validation
+837,Metoxuron,COc1ccc(NC(=O)N(C)C)cc1Cl,Validation
+76,3-Hexanoyloxymethylphenyltoin,O=C1N(COC(=O)CCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,Validation
+958,"1,2-Dichloropropane",CC(Cl)CCl,Validation
+1019,"P,P'-DDD",ClC(Cl)C(c1ccc(Cl)cc1)c2ccc(Cl)cc2 ,Validation
+1091,cis-2-Pentene,CC/C=C\C,Validation
+448,allantoin,NC(=O)NC1NC(=O)NC1=O ,Validation
+721,diphenamid,CN(C)C(=O)C(c1ccccc1)c2ccccc2 ,Validation
+931,Thymol,CC(C)c1ccc(C)cc1O,Validation
+741,p-Toluenesulfonamide ,Cc1ccc(cc1)S(=O)(=O)N,Validation
+876,"3,5-Dimethylphenol",Cc1cc(C)cc(O)c1,Validation
+713,Isopropyl acetate,CC(C)OC(=O)C,Validation
+912,p-Methoxybenzaldehyde,COc1ccc(C=O)cc1,Validation
+66,Trietazine,CCNc1nc(Cl)nc(n1)N(CC)CC,Validation
+1007,Acrylonitrile,C=CC#N,Validation
+830,4-Bromotoluene,Cc1ccc(Br)cc1,Validation
+666,"2,3-Dimethylbutane",CC(C)C(C)C,Validation
+361,p-Fluoroacetanilide,CC(=O)Nc1ccc(F)cc1,Validation
+445,p-Bromoiodobenzene,Brc1ccc(I)cc1,Validation
+963,difluron,Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2,Validation
+465,5-Ethyl-5-phenylbarbital,O=C1NC(=O)NC(=O)C1(CC)c1ccccc1,Validation
+1006,3-Pentanone,CCC(=O)CC,Validation
+291,tetrachloroguaiacol,COc1c(O)c(Cl)c(Cl)c(Cl)c1Cl ,Validation
+478,2-Methylpentane,CCCC(C)C,Validation
+650,Pyrene,c1cc2ccc3cccc4ccc(c1)c2c34,Validation
+758,Acephate,COP(=O)(NC(C)=O)SC ,Validation
+903,Ethyl propionate,CCOC(=O)CC,Validation
+63,p-Aminophenol,Nc1ccc(O)cc1,Validation
+727,1-methyluracil,Cn1ccc(=O)[nH]c1=O,Validation
+44,Isopropyl formate,CC(C)OC=O,Validation
+1039,Spironolactone,CC(=O)SC4CC1=CC(=O)CCC1(C)C5CCC2(C)C(CCC23CCC(=O)O3)C45,Validation
+309,Cyclooctanol,OC1CCCCCCC1,Validation
+780,Benzo(j)fluoranthene,c1ccc2c3c(ccc2c1)c4cccc5cccc3c45,Validation
+954,"3,5-Dimethylpyridine",Cc1cncc(C)c1,Validation
+1001,"N,N-Dimethylaniline",CN(C)c1ccccc1,Validation
+464,t-Pentylbenzene,CC(C)(C)Cc1ccccc1,Validation
+210,Ethyl acetate,CCOC(=O)C,Validation
+884,DNOC,Cc1cc(cc(N(=O)=O)c1O)N(=O)=O,Validation
+974,3-Methyl-2-butanone,CC(C)C(=O)C,Validation
+1120,"2,3,3',4,4'6-PCB",Clc1ccc(c(Cl)c1Cl)c2c(Cl)cc(Cl)c(Cl)c2Cl ,Validation
+951,RTI 12,CCN2c1nc(Cl)ccc1N(C)C(=O)c3cccnc23 ,Validation
+70,nitrofurantoin,O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 ,Validation
+220,Perylene,c1cc2cccc3c4cccc5cccc(c(c1)c23)c54,Validation
+773,Trichloromethane,ClC(Cl)Cl,Validation
+618,nitroglycerin,O=N(=O)OCC(CON(=O)=O)ON(=O)=O ,Validation
+907,"2,4',5-PCB",Clc1ccc(cc1)c2cc(Cl)ccc2Cl ,Validation
+844,estriol,CC34CCC1C(CCc2cc(O)ccc12)C3CC(O)C4O ,Validation
+447,Pentylbenzene,CCCCCc1ccccc1,Validation
+451,testosterone acetate,CC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C ,Validation
+598,3-Methyl-1-Butene,CC(C)C=C,Validation
+789,Acetanilide,CC(=O)Nc1ccccc1,Validation
+110,Ioxynil,Oc1c(I)cc(C#N)cc1I,Validation
+6,"2,2,4,6,6'-PCB",Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl,Validation
+248,Triazolam,Cc3nnc4CN=C(c1ccccc1Cl)c2cc(Cl)ccc2n34,Validation
+427,rhodanine,C1SC(=S)NC1(=O),Validation
+256,Napthalene,c1ccc2ccccc2c1,Validation
+270,cycloate,CCSC(=O)N(CC)C1CCCCC1 ,Validation
+411,thiopental,CCCC(C)C1(CC)C(=O)NC(=S)NC1=O ,Validation
+982,Trifluralin,CCCN(CCC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O,Validation
+557,Dihexyl phthalate,CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC,Validation
+523,Furfural,O=Cc1ccco1,Validation
+439,1-Chloro-2-bromoethane,ClCCBr,Validation
+1117,Chlorthalidone,NS(=O)(=O)c1cc(ccc1Cl)C2(O)NC(=O)c3ccccc23,Validation
+156,"5,6,7,8-tetrahydro-2-naphthol",Oc2ccc1CCCCc1c2 ,Validation
+898,5-(3-Methyl-2-butenyl)-5-ethylbarbital,O=C1NC(=O)NC(=O)C1(CC)CC=C(C)C,Validation
+482,Fluvalinate,CC(C)C(Nc1ccc(cc1Cl)C(F)(F)F)C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,Validation
+286,Bibenzyl ,C(Cc1ccccc1)c2ccccc2,Validation
+168,Nitroethane,CCN(=O)=O,Validation
+714,Bromobenzene,Brc1ccccc1,Validation
+824,"2,2',3,5,5',6-PCB",Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)cc(Cl)c2Cl ,Validation
+247,"1,2,4-Trichlorobenzene",Clc1ccc(Cl)c(Cl)c1,Validation
+793,Isopentyl formate,CC(C)CCOC=O,Validation
+344,Lovastatin,CCC(C)C(=O)OC2CC(C)C=C3C=CC(C)C(CCC1CC(O)CC(=O)O1)C23 ,Validation
+839,Styrene,C=Cc1ccccc1,Validation
+519,"1,1,1,2-Tetrachloroethane",ClCC(Cl)(Cl)Cl,Validation
+158,Iodofenphos,COP(=S)(OC)Oc1cc(Cl)c(I)cc1Cl,Validation
+106,o-Nitrophenol,Oc1ccccc1N(=O)=O,Validation
+231,5-Allyl-5-methylbarbital,O=C1NC(=O)NC(=O)C1(C)CC=C,Validation
+390,2-Methylanthracene,Cc1ccc2cc3ccccc3cc2c1,Validation
+538,1-Iodopropane,CCCI,Validation
+1065,"2,3,4,5-Tetrachlorophenol",Oc1cc(Cl)c(Cl)c(Cl)c1Cl,Validation
+754,Trimazosin,COc2cc1c(N)nc(nc1c(OC)c2OC)N3CCN(CC3)C(=O)OCC(C)(C)O ,Validation
+1099,2-Ethyl-1-butanol,CCC(CC)CO,Validation
+743,2-Methylheptane,CCCCCC(C)C,Validation
+855,DDT,Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl,Validation
+363,Cyclohexene,C1CCC=CC1,Validation
+477,1-Bromohexane,CCCCCCBr,Validation
+724,phthalimide,O=C1NC(=O)c2ccccc12 ,Validation
+490,2-Bromopropane,CC(C)Br,Validation
+738,ethyl cinnamate,CCOC(=O)C=Cc1ccccc1,Validation
+56,"2,2,5-Trimethylhexane",CC(C)CCC(C)(C)C,Validation
+1116,Abate,COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1,Validation
+708,Norea,CN(C)C(=O)NC1CC2CC1C3CCCC23,Validation
+768,Anthracene,c1ccc2cc3ccccc3cc2c1,Validation
+726,Methyl benzoate ,COC(=O)c1ccccc1,Validation
+371,Nitrobenzene,O=N(=O)c1ccccc1,Validation
+213,eucalyptol,CC12CCC(CC1)C(C)(C)O2 ,Validation
+1094,butacarb,c1(C(C)(C)C)cc(C(C)(C)C)cc(OC(=O)NC)c1,Validation
+596,Estragole,c1(OC)ccc(CC=C)cc1,Validation
+215,"4,4'-PCB",Clc1ccc(cc1)c2ccc(Cl)cc2 ,Validation
+979,Methyl nonanoate,CCCCCCCCC(=O)OC,Validation
+1052,RTI 15,CCN2c1nc(C)cc(C)c1NC(=O)c3cccnc23 ,Validation
+595,o-Toluidine,Cc1ccccc1N,Validation
+585,5-methylcytosine,Nc1c(C)c[nH]c(=O)n1 ,Validation
+298,Raffinose,OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O,Validation
+551,2-methylpteridine,Cc2ncc1nccnc1n2,Validation
+630,Propyl propanoate,CCCCC(=O)OC,Validation
+423,"1,2,4-tribromobenzene",c1(Br)c(Br)cc(Br)cc1,Validation
+886,3-Chlorophenol,Oc1cccc(Cl)c1,Validation
+381,chloralose,OCC(O)C2OC1OC(OC1C2O)C(Cl)(Cl)Cl ,Validation
+3,Picene,c1ccc2c(c1)ccc3c2ccc4c5ccccc5ccc43,Validation
+128,Pyridine,c1ccncc1,Validation
+1064,vamidothion,CNC(=O)C(C)SCCSP(=O)(OC)(OC),Validation
+25,1-Heptanol,CCCCCCCO,Validation
+289,2-Methylphenanthrene,Cc1ccc2c(ccc3ccccc32)c1,Validation
+424,Oxazepam,OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O ,Test
+507,4-methoxypteridine,COc1ncnc2nccnc12 ,Test
+49,"2,7-dimethylquinoline",c2c(C)cc1nc(C)ccc1c2 ,Test
+858,RTI 13,CCN2c1nc(C)cc(C(F)(F)F)c1NC(=O)c3cccnc23 ,Test
+629,"2,3,5-Trichlorophenol",Oc1cc(Cl)cc(Cl)c1Cl,Test
+184,Trichloronate,CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl,Test
+54,"2,2',3,3',5,6-PCB",Clc1cccc(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl ,Test
+1115,parabanic acid,O=C1NC(=O)C(=O)N1 ,Test
+792,hydroxychlordene,OC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl ,Test
+319,"2,2',3,4,5-PCB",Clc1cc(Cl)c(cc1Cl)c2cccc(Cl)c2Cl ,Test
+23,Phenacetin,CCOc1ccc(NC(=O)C)cc1,Test
+336,Dibenzofurane,o1c2ccccc2c3ccccc13,Test
+631,Aniline ,Nc1ccccc1,Test
+877,Barban,ClCC#CCOC(=O)Nc1cccc(Cl)c1,Test
+479,Tetrafluthrin,Cc1c(F)c(F)c(COC(=O)C2C(C=C(Cl)C(F)(F)F)C2(C)C)c(F)c1F,Test
+199,Diisopropyl ether ,CC(C)OC(C)C,Test
+782,Dipropyl ether,CCCOCCC,Test
+692,"2,3,4-Trichlorophenol",Oc1ccc(Cl)c(Cl)c1Cl,Test
+814,Ethyl benzoate ,CCOC(=O)c1ccccc1,Test
+827,Monolinuron,CON(C)C(=O)Nc1ccc(Cl)cc1,Test
+72,Camphor,CC1(C)C2CCC1(C)C(=O)C2,Test
+453,RTI 19,CCN2c1ccccc1N(C)C(=O)c3ccccc23 ,Test
+442,RTI 2,CCN2c1ncccc1N(CC)C(=O)c3cccnc23 ,Test
+198,2-Chlorotoluene,Cc1ccccc1Cl,Test
+435,1-Octanol,CCCCCCCCO,Test
+428,Morin,Oc1ccc(c(O)c1)c3oc2cc(O)cc(O)c2c(=O)c3O ,Test
+716,3-Butanoyloxymethylphenytoin,O=C1N(COC(=O)CCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,Test
+693,Anisole,COc1ccccc1,Test
+290,dibutylphthalate,CCCCOC(=O)c1ccccc1C(=O)OCCCC ,Test
+367,Methyl propionate,CCC(=O)OC,Test
+730,Quinethazone,CCC2NC(=O)c1cc(c(Cl)cc1N2)S(N)(=O)=O,Test
+86,Flucythrinate,CC(C)C(C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1)c3ccc(OC(F)F)cc3,Test
+457,"3,4-Dichlorophenol",Oc1ccc(Cl)c(Cl)c1,Test
+261,Methoxychlor,COc1ccc(cc1)C(c2ccc(OC)cc2)C(Cl)(Cl)Cl,Test
+31,Terbufos,CCOP(=S)(OCC)SCSC(C)(C)C,Test
+527,Benzaldehyde,O=Cc1ccccc1,Test
+1127,Stirofos,COP(=O)(OC)OC(=CCl)c1cc(Cl)c(Cl)cc1Cl,Test
+165,Nerol,CC(C)=CCC/C(C)=C\CO,Test
+755,Cholanthrene,C1Cc2c3c1cccc3cc4c2ccc5ccccc54,Test
+892,3-Octanol,CCCCCC(O)CC,Test
+989,1-Bromooctane,CCCCCCCCBr,Test
+140,trans-2-Pentene ,CC/C=C/C,Test
+1068,Butane,CCCC,Test
+554,2-Bromonapthalene,Brc1ccc2ccccc2c1,Test
+866,Dienestrol,CC=C(C(=CC)c1ccc(O)cc1)c2ccc(O)cc2,Test
+1046,Chlordane,ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,Test
+981,Thalidomide,O=C1N(C2CCC(=O)NC2=O)C(=O)c3ccccc13,Test
+60,"2,2',3,3',5,5',6,6'-PCB",Clc1cc(Cl)c(Cl)c(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl ,Test
+922,norbormide,OC(C1=CC2C5C(C1C2=C(c3ccccc3)c4ccccn4)C(=O)NC5=O)(c6ccccc6)c7ccccn7 ,Test
+590,"2,4-Dichlorophenol ",Oc1ccc(Cl)cc1Cl,Test
+583,Coumachlor,CC(=O)CC(c1ccc(Cl)cc1)c2c(O)c3ccccc3oc2=O,Test
+843,"1,4-Benzenediol",Oc1ccc(O)cc1,Test
+1013,Isoprocarb,CNC(=O)Oc1ccccc1C(C)C,Test
+613,1-Nonanol,CCCCCCCCCO,Test
+218,Carbophenthion,CCOP(=S)(OCC)SCSc1ccc(Cl)cc1,Test
+58,6-Methylchrysene,Cc1cc2c3ccccc3ccc2c4ccccc14,Test
+536,Santonin,CC3C2CCC1(C)C=CC(=O)C(=C1C2OC3=O)C,Test
+307,Tetrachloromethane,ClC(Cl)(Cl)Cl,Test
+354,Malathion,CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC,Test
+906,"2,3-Dimethylnaphthalene",Cc1cc2ccccc2cc1C,Test
+362,alachlor,CCc1cccc(CC)c1N(COC)C(=O)CCl ,Test
+182,Methaqualone,Cc1ccccc1n3c(C)nc2ccccc2c3=O,Test
+409,Cycloheptanol,OC1CCCCCC1,Test
+394,Methyldymron,CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2,Test
+720,Chloroethylene,ClC=C,Test
+701,probarbital,CCC1(C(C)C)C(=O)NC(=O)NC1=O ,Test
+626,"1,2-Propylene oxide",CC1CO1,Test
+192,Propoxur,CNC(=O)Oc1ccccc1OC(C)C,Test
+777,2-Ethylhexanal,CCCCC(CC)C=O,Test
+107,thymine,Cc1c[nH]c(=O)[nH]c1=O ,Test
+481,nifuroxime,ON=Cc1ccc(o1)N(=O)=O ,Test
+292,Dimecron,CCN(CC)C(=O)C(=CCOP(=O)(OC)OC)Cl,Test
+29,Methyl octanoate,CCCCCCCC(=O)OC,Test
+280,o-Hydroxybenzamide,NC(=O)c1ccccc1O,Test
+92,Fluoranthene,c1ccc2c(c1)c3cccc4cccc2c34,Test
+294,Chlorimuron-ethyl (ph 7),CCOC(=O)c1ccccc1S(=O)(=O)NN(C=O)c2nc(Cl)cc(OC)n2,Test
+588,Riboflavin,Cc3cc2nc1c(=O)[nH]c(=O)nc1n(CC(O)C(O)C(O)CO)c2cc3C,Test
+1020,Methyl acrylate,COC(=O)C=C,Test
+1018,Quinonamid,ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O,Test
+51,cyclobarbital,CCC1(C(=O)NC(=O)NC1=O)C2=CCCCC2 ,Test
+761,Trichlomethiazide,NS(=O)(=O)c2cc1c(NC(NS1(=O)=O)C(Cl)Cl)cc2Cl ,Test
+47,brompyrazone,c1ccccc1n2ncc(N)c(Br)c2(=O),Test
+328,Ethyl pentanoate,CCCOC(=O)CCC,Test
+346,Reposal,CCC1(C(=O)NC(=O)NC1=O)C2=CCC3CCC2C3,Test
+959,2-Ethyl-2-hexanal,CCCC=C(CC)C=O,Test
+299,hexacosane,CCCCCCCCCCCCCCCCCCCCCCCCCC,Test
+413,p-Nitrophenol,Oc1ccc(cc1)N(=O)=O,Test
+723,RTI 22,CCN2c1cc(N(C)C)cc(C)c1NC(=O)c3cccnc23 ,Test
+138,m-Chloroiodobenzene,Clc1cccc(I)c1,Test
+429,Kepone,ClC1(C(=O)C2(Cl)C3(Cl)C14Cl)C5(Cl)C2(Cl)C3(Cl)C(Cl)(Cl)C45Cl,Test
+2,citral,CC(C)=CCCC(C)=CC(=O),Test
+467,Benzotriazole,c2ccc1[nH]nnc1c2,Test
+1125,Thiometon,CCSCCSP(=S)(OC)OC,Test
+237,4-Heptanone,CCCC(=O)CCC,Test
+139,1-Bromonapthalene,Brc1cccc2ccccc12,Test
+541,Hydroxyprogesterone-17a,CC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C,Test
+333,2-Isopropyltoluene,CC(C)c1ccccc1C,Test
+808,RTI 16,CCN2c1ncccc1N(C)C(=S)c3cccnc23 ,Test
+96,Chlorothalonil,c1(C#N)c(Cl)c(C#N)c(Cl)c(Cl)c(Cl)1,Test
+137,Cyclopropyl-5-spirobarbituric acid,O=C2NC(=O)C1(CC1)C(=O)N2 ,Test
+643,"1,2,3,4-Tetrahydronapthalene",C1CCc2ccccc2C1,Test
+696,Difenoxuron,COc2ccc(Oc1ccc(NC(=O)N(C)C)cc1)cc2,Test
+616,"2,6-Dimethylnaphthalene ",Cc1ccc2cc(C)ccc2c1,Test
+865,Triphenylene,c1ccc2c(c1)c3ccccc3c4ccccc24,Test
+1105,"2,2-Dimethylpropanol",CC(C)(C)CO,Test
+568,p-benzidine,Nc1ccc(cc1)c2ccc(N)cc2,Test
+825,5-Ethyl-5-isopropylbarbituric acid,O=C1NC(=O)NC(=O)C1(CC)C(C)C,Test
+273,Talbutal,CCC(C)C1(CC=C)C(=O)NC(=O)NC1=O,Test
+141,"2,6-Dimethylpyridine",Cc1cccc(C)n1,Test
+39,1-Iodoheptane,CCCCCCCI,Test
+591,Permethrin,CC1(C)C(C=C(Cl)Cl)C1C(=O)OCc2cccc(Oc3ccccc3)c2,Test
+703,Metronidazole,Cc1ncc(N(=O)=O)n1CCO,Test
+404,metharbital,CCC1(CC)C(=O)NC(=O)N(C)C1=O ,Test
+377,Propyl butyrate,CCCC(=O)OC,Test
+812,osthole,c1cc2ccc(OC)c(CC=C(C)(C))c2oc1=O ,Test
+486,Phosalone,CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12,Test
+321,Benzo(b)fluoranthene,c1ccc2c(c1)c3cccc4c3c2cc5ccccc54,Test
+327,"2,2-Dimethyl-1-butanol",CCC(C)(C)CO,Test
+436,Diethyl sulfide,CCSCC,Test
+802,Erythritol,OCC(O)C(O)CO,Test
+803,Risocaine,CCCOC(=O)c1ccc(N)cc1,Test
+771,Cyclooctane,C1CCCCCCC1,Test
+525,piperonal,O=Cc2ccc1OCOc1c2 ,Test
+582,Perfluidone,Cc1cc(ccc1NS(=O)(=O)C(F)(F)F)S(=O)(=O)c2ccccc2,Test
+420,Progesterone,CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C,Test
+688,Simetryn,CSc1nc(nc(n1)N(C)C)N(C)C,Test
+1076,4-Heptanol,CCCC(O)CCC,Test
+1012,"1,2-Dibromoethane",BrCCBr,Test
+711,prednisolone acetate,CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C ,Test
+265,Flutriafol,OC(Cn1cncn1)(c2ccc(F)cc2)c3ccccc3F,Test
+504,pyracarbolid,CC1=C(CCCO1)C(=O)Nc2ccccc2 ,Test
+208,Fluorobenzene,Fc1ccccc1,Test
+67,Pyrazinamide,NC(=O)c1cnccn1,Test
+845,Benzo(b)fluorene,C1c2ccccc2c3cc4ccccc4cc13,Test
+405,deoxycorticosterone acetate,CC(=O)OCC(=O)C3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C ,Test
+636,Atratone,CCNc1nc(NC(C)C)nc(OC)n1,Test
+1085,Ditalimfos,CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O,Test
+1048,Benzamide,NC(=O)c1ccccc1,Test
+594,Cyclopentane ,C1CCCC1,Test
+10,2-pyrrolidone,O=C1CCCN1,Test
+136,p-t-Butylphenol,CC(C)(C)c1ccc(O)cc1,Test
+88,Menthone,CC(C)C1CCC(C)CC1=O,Test
+514,Dioxacarb,CNC(=O)Oc1ccccc1C2OCCO2,Test
+113,Phenol,c1ccccc1O,Test
+244,2-Decanone,CCCCCCCCC(=O)C,Test
+634,Acenapthylene,C1=Cc2cccc3cccc1c23,Test
+296,1-Chlorohexane,CCCCCCCl,Test
+209,1-Chloropropane,CCCCl,Test
+501,"1,4-Dibromobenzene",Brc1ccc(Br)cc1,Test
+1069,o-Methoxyphenol,COc1ccccc1O,Test
+277,Ethanethiol,CCS,Test
+784,"2,3,6-Trichlorophenol",Oc1c(Cl)ccc(Cl)c1Cl,Test
+323,phenobarbital,CCC1(C(=O)NC(=O)NC1=O)c2ccccc2 ,Test
+331,Cycloheptane,C1CCCCCC1,Test
+597,karbutilate,CN(C)C(=O)Nc1cccc(OC(=O)NC(C)(C)C)c1 ,Test
+1078,"2,3,5,6-Tetrachlorophenol",Oc1c(Cl)c(Cl)cc(Cl)c1Cl,Test
+539,Ametryn,CCNc1nc(NC(C)C)nc(SC)n1,Test
+796,Triethyl phosphate,CCOP(=O)(OCC)OCC,Test
+970,"2,2',6,6'-PCB",Clc1cccc(Cl)c1c2c(Cl)cccc2Cl ,Test
+811,1-Heptyne,CCCCCC#C,Test
+359,Methyl hexanoate,CCCCCC(=O)OC,Test
+916,indazole,c2ccc1[nH]ncc1c2 ,Test
+750,Testosterone,CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1O,Test
+260,Dialifor,CCOP(=S)(OCC)SC(CCl)N1C(=O)c2ccccc2C1=O,Test
+533,sulfaguanidine,NC(=N)NS(=O)(=O)c1ccc(N)cc1 ,Test
+306,"1,2,3-Trichlorobenzene",Clc1cccc(Cl)c1Cl,Test
+355,Benzylchloride,ClCc1ccccc1,Test
+55,2-Methylphenol,Cc1ccccc1O,Test
+712,Methyl propyl ether ,CCCOC,Test
+318,adenine,Nc1ncnc2nc[nH]c12 ,Test
