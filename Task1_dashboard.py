@@ -23,9 +23,9 @@ except ImportError:
 st.set_page_config(
     page_title="Molecular Solubility Dashboard",
     page_icon="🧪",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
-
 st.html("""
 <style>
 [data-testid="stMainBlockContainer"] {
@@ -78,37 +78,35 @@ curves_df = load_results("final_training_curves.csv")
 mol_preds_df = load_results("molecule_predictions.csv")
 
 # ==========================================
-# PROJECT OVERVIEW & FINAL MODEL METRICS
+# COLLAPSIBLE DROPDOWN: PROJECT OVERVIEW & FINAL MODEL METRICS
 # ==========================================
 
-st.header("Project Overview & Reproducible Setup")
-st.write(
-    "This dashboard documents **Task 1 (Training & Model Comparison)** and **Question 1 (Model Performance)** "
-    "for predicting measured water solubility ($\log S$ in mol/L) from molecular graph structure on the ESOL dataset."
-)
+with st.expander("📋 Project Overview & Current Best Model Performance", expanded=False):
+    st.write(
+        "This dashboard documents **Task 1 (Training & Model Comparison)** and **Question 1 (Model Performance)** "
+        "for predicting measured water solubility ($\log S$ in mol/L) from molecular graph structure on the ESOL dataset."
+    )
 
-total_col, train_col, val_col, test_col, seed_col = st.columns(5)
-total_col.metric("Total Molecules", f"{len(df):,}" if not df.empty else "1,128")
-train_col.metric("Training Split (70%)", "789")
-val_col.metric("Validation Split (15%)", "169")
-test_col.metric("Test Split (15%)", "170")
-seed_col.metric("Random Seed", "42")
+    total_col, train_col, val_col, test_col, seed_col = st.columns(5)
+    total_col.metric("Total Molecules", f"{len(df):,}" if not df.empty else "1,128")
+    train_col.metric("Training Split (70%)", "789")
+    val_col.metric("Validation Split (15%)", "169")
+    test_col.metric("Test Split (15%)", "170")
+    seed_col.metric("Random Seed", "42")
 
-st.subheader("Current Best Model Performance (GraphSAGE + Sum Pooling, 64 Hidden, 2 Layers)")
+    st.divider()
+    st.markdown("##### Current Best Model Performance (GraphSAGE + Sum Pooling, 64 Hidden, 2 Layers)")
 
-if final_df is not None:
-    result = final_df.iloc[0]
-    c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("Test RMSE (log S)", f"{result['Test RMSE']:.4f} log S")
-    c2.metric("Test MAE (log S)", f"{result['Test MAE']:.4f} log S")
-    c3.metric("Test R²", f"{result['Test R2']:.4f}")
-    c4.metric("Within ±0.5 log S", f"{result['Accuracy ±0.5 (%)']:.2f}%")
-    c5.metric("Within ±1.0 log S", f"{result['Accuracy ±1.0 (%)']:.2f}%")
-else:
-    st.info("Run `model_training.ipynb` to generate `final_model_results.csv`.")
-
-st.divider()
-
+    if final_df is not None:
+        result = final_df.iloc[0]
+        c1, c2, c3, c4, c5 = st.columns(5)
+        c1.metric("Test RMSE (log S)", f"{result['Test RMSE']:.4f} log S")
+        c2.metric("Test MAE (log S)", f"{result['Test MAE']:.4f} log S")
+        c3.metric("Test R²", f"{result['Test R2']:.4f}")
+        c4.metric("Within ±0.5 log S", f"{result['Accuracy ±0.5 (%)']:.2f}%")
+        c5.metric("Within ±1.0 log S", f"{result['Accuracy ±1.0 (%)']:.2f}%")
+    else:
+        st.info("Run `model_training.ipynb` to generate `final_model_results.csv`.")
 # ==========================================
 # NAVIGATION TABS FOR TASK 1 & QUESTION 1
 # ==========================================
@@ -125,21 +123,27 @@ tab1, tab2, tab3, tab4 = st.tabs([
 # ==============================================================================
 with tab1:
     st.subheader("Core Architecture, Pooling & Hidden Size")
-    col_a, col_b, col_c = st.columns(3)
 
+    # Single shared dropdown controlling all 6 comparison charts in Tab 1
+    ctrl_col, _ = st.columns([1, 2])
+    with ctrl_col:
+        selected_metric = st.selectbox(
+            "Select Evaluation Metric (log S):",
+            options=["Validation RMSE", "Validation MAE"],
+            index=0,
+            key="global_tab1_metric"
+        )
+    unit_suffix = " (log S)"
+
+    col_a, col_b, col_c = st.columns(3)
     # Chart 1: Architecture Comparison
     with col_a:
         st.markdown("##### 1. GNN Architecture Comparison")
         if architecture_df is not None:
-            arch_metric = st.selectbox(
-                "Evaluation Metric (log S)",
-                ["Validation RMSE", "Validation MAE"],
-                key="architecture_metric"
-            )
             fig1 = px.bar(
                 architecture_df,
                 x="Model",
-                y=arch_metric,
+                y=selected_metric,
                 color="Model",
                 text_auto=".4f",
                 title="GCN vs GraphSAGE vs GAT",
@@ -148,7 +152,7 @@ with tab1:
             fig1.update_layout(
                 height=350,
                 showlegend=False,
-                yaxis_title=f"{arch_metric} (log S)",
+                yaxis_title=f"{selected_metric}{unit_suffix}",
                 xaxis_title="GNN Architecture"
             )
             st.plotly_chart(fig1, use_container_width=True)
@@ -159,16 +163,10 @@ with tab1:
     with col_b:
         st.markdown("##### 2. GraphSAGE Pooling Comparison")
         if pooling_df is not None:
-            pooling_metric = st.selectbox(
-                "Pooling Metric",
-                ["Validation RMSE", "Validation MAE", "Validation R2"],
-                key="pooling_metric"
-            )
-            unit_suffix = " (log S)" if "R2" not in pooling_metric else ""
             fig2 = px.bar(
                 pooling_df,
                 x="Pooling",
-                y=pooling_metric,
+                y=selected_metric,
                 color="Pooling",
                 text_auto=".4f",
                 title="Mean vs Max vs Sum Pooling",
@@ -177,7 +175,7 @@ with tab1:
             fig2.update_layout(
                 height=350,
                 showlegend=False,
-                yaxis_title=f"{pooling_metric}{unit_suffix}",
+                yaxis_title=f"{selected_metric}{unit_suffix}",
                 xaxis_title="Pooling Method"
             )
             st.plotly_chart(fig2, use_container_width=True)
@@ -188,18 +186,12 @@ with tab1:
     with col_c:
         st.markdown("##### 3. Hidden Dimension Comparison")
         if hidden_df is not None:
-            hidden_metric = st.selectbox(
-                "Hidden Size Metric",
-                ["Validation RMSE", "Validation MAE", "Validation R2"],
-                key="hidden_metric"
-            )
-            unit_suffix_h = " (log S)" if "R2" not in hidden_metric else ""
             hidden_plot_df = hidden_df.copy()
             hidden_plot_df["Hidden Channels"] = hidden_plot_df["Hidden Channels"].astype(str)
             fig3 = px.bar(
                 hidden_plot_df,
                 x="Hidden Channels",
-                y=hidden_metric,
+                y=selected_metric,
                 color="Hidden Channels",
                 text_auto=".4f",
                 title="GraphSAGE: 64 vs 128 Channels",
@@ -208,7 +200,7 @@ with tab1:
             fig3.update_layout(
                 height=350,
                 showlegend=False,
-                yaxis_title=f"{hidden_metric}{unit_suffix_h}",
+                yaxis_title=f"{selected_metric}{unit_suffix}",
                 xaxis_title="Hidden Channels"
             )
             st.plotly_chart(fig3, use_container_width=True)
@@ -228,7 +220,7 @@ with tab1:
             fig_layer = px.bar(
                 layer_plot_df,
                 x="Layers",
-                y="Validation RMSE",
+                y=selected_metric,
                 color="Layers",
                 text_auto=".4f",
                 title="Effect of Message-Passing Depth",
@@ -237,7 +229,7 @@ with tab1:
             fig_layer.update_layout(
                 height=340,
                 showlegend=False,
-                yaxis_title="Validation RMSE (log S)",
+                yaxis_title=f"{selected_metric}{unit_suffix}",
                 xaxis_title="Number of Layers"
             )
             st.plotly_chart(fig_layer, use_container_width=True)
@@ -253,7 +245,7 @@ with tab1:
             fig_lr = px.bar(
                 lr_plot_df,
                 x="Learning Rate",
-                y="Validation RMSE",
+                y=selected_metric,
                 color="Learning Rate",
                 text_auto=".4f",
                 title="Effect of Adam Learning Rate",
@@ -262,7 +254,7 @@ with tab1:
             fig_lr.update_layout(
                 height=340,
                 showlegend=False,
-                yaxis_title="Validation RMSE (log S)",
+                yaxis_title=f"{selected_metric}{unit_suffix}",
                 xaxis_title="Learning Rate"
             )
             st.plotly_chart(fig_lr, use_container_width=True)
@@ -278,7 +270,7 @@ with tab1:
             fig_drop = px.bar(
                 drop_plot_df,
                 x="Dropout",
-                y="Validation RMSE",
+                y=selected_metric,
                 color="Dropout",
                 text_auto=".4f",
                 title="Effect of Dropout Rate",
@@ -287,7 +279,7 @@ with tab1:
             fig_drop.update_layout(
                 height=340,
                 showlegend=False,
-                yaxis_title="Validation RMSE (log S)",
+                yaxis_title=f"{selected_metric}{unit_suffix}",
                 xaxis_title="Dropout Probability"
             )
             st.plotly_chart(fig_drop, use_container_width=True)
@@ -622,30 +614,11 @@ with tab4:
 
     st.divider()
 
-    # ==========================================
+# ==========================================
     # DOCUMENTED DASHBOARD FINDINGS (SLIDE 6 & 7)
     # ==========================================
     st.subheader("📝 Documented Dashboard Findings (For Deadline 1 & Shared Model Meeting)")
     st.markdown("""
-    * **1. Architecture & Pooling Selection (`GraphSAGE` + `sum` pooling):**
-      * Across all tested GNN architectures (`GCN`, `GraphSAGE`, `GAT`), **GraphSAGE** achieved the lowest validation error.
-      * Replacing `mean` or `max` pooling with **global `sum` pooling** produced the largest performance jump (Validation RMSE improved from `1.1744 log S` with mean pooling to **`0.8214 log S`** with sum pooling; $R^2 = 0.866$). Chemically, water solubility depends on the *total count* of hydrophobic carbons and hydrophilic polar groups—which `sum` pooling preserves and `mean` pooling dilutes.
-    * **2. Hyperparameter & Split Stability:**
-      * **Hidden Size & Depth:** `64` hidden channels with `2` message-passing layers (`lr = 0.001`, `dropout = 0.2`) prevented over-smoothing and overfitting on the 1,128-molecule ESOL dataset compared to deeper (3–4 layer) or wider (128-channel) networks.
-      * **Separating Split Effects from Model Changes:** Across all tested split seeds and ratios (`70/15/15 Seed 42`, `70/15/15 Seed 100`, `80/10/10 Seed 42`), **GraphSAGE (Sum Pool)** consistently outperformed **GCN (Mean Pool)** by ~0.35–0.45 $\log S$ RMSE, confirming the improvement comes from the model architecture rather than a lucky split.
-    * **3. Question 1 — Where the Model Performs Well vs. Fails:**
-      * **Performs Well:** Moderate-to-soluble small organic molecules ($\log S \in [-4, 0]$, Molecular Weight $< 250\text{ g/mol}$, 0–2 rings), where 77.65% of all test predictions fall within $\pm 1.0 \log S$.
-      * **Where it Fails:** Extreme low-solubility compounds ($\log S < -6$) and large polycyclic/halogenated molecules (high Molecular Weight $> 350\text{ g/mol}$ or $\ge 4$ rings). Since our 5 node features only capture basic atom properties (`AtomicNum`, `Degree`, `FormalCharge`, `TotalNumHs`, `IsAromatic`) without 3D conformation or crystal-packing lattice energy, solid-state polycyclic molecules exhibit higher residual errors.
-    * **4. Candidate Checkpoint Recommendation for XAI Explainer Comparison:**
-      * We recommend `artifacts/checkpoints/final_graphsage_model.pt` (**2-layer GraphSAGE, Sum Pooling, 64 hidden channels, Test RMSE = `0.9559 log S`, Test MAE = `0.6727 log S`**) paired with `artifacts/results/split_ids.csv` (`Seed = 42`).
-    """)
-
-st.divider()
-st.caption(
-    "Task 1 & Question 1 — Molecular Water Solubility Prediction | "
-    "Reproducible GNN Training & Error Analysis Dashboard"
-)
-st.markdown("""
     * **1. Architecture & Pooling Selection (`GraphSAGE` + `sum` pooling):**
       * Across all tested GNN architectures (`GCN`, `GraphSAGE`, `GAT`), **GraphSAGE** achieved the lowest validation error (`1.1961 log S` vs. `1.3358 log S` for GAT and `1.3982 log S` for GCN).
       * Replacing `mean` or `max` pooling with **global `sum` pooling** produced the largest performance jump (Validation RMSE improved from `1.2248 log S` with mean pooling to **`0.8626 log S`** with sum pooling; $R^2 = 0.8523$). Chemically, water solubility depends on the *total count* of hydrophobic carbons and hydrophilic polar groups—which `sum` pooling preserves and `mean` pooling dilutes.
@@ -658,3 +631,9 @@ st.markdown("""
     * **4. Candidate Checkpoint Recommendation for XAI Explainer Comparison:**
       * We recommend `artifacts/checkpoints/final_graphsage_model.pt` (**2-layer GraphSAGE, Sum Pooling, 64 hidden channels, Test RMSE = `0.9559 log S`, Test MAE = `0.6727 log S`**) paired with `artifacts/results/split_ids.csv` (`Seed = 42`).
     """)
+
+st.divider()
+st.caption(
+    "Task 1 & Question 1 — Molecular Water Solubility Prediction | "
+    "Reproducible GNN Training & Error Analysis Dashboard"
+)
