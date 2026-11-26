@@ -1,2 +1,2 @@
 Model,Architecture,Hidden Channels,Pooling,Dropout,Learning Rate,Best Epoch,Validation RMSE,Validation MAE
-GCN,2-layer GCN,64,Global Mean,0.2,0.001,98,1.3981830976788636,1.0922362658046407
+GCN,2-layer GCN,64,Global Mean,0.2,0.001,98,1.3583275909119743,1.1213362368606252
