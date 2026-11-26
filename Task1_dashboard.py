@@ -95,7 +95,7 @@ with st.expander("📋 Project Overview & Current Best Model Performance", expan
     seed_col.metric("Random Seed", "42")
 
     st.divider()
-    st.markdown("##### Current Best Model Performance (GraphSAGE + Sum Pooling, 64 Hidden, 2 Layers)")
+    st.markdown("##### Current Best Model Performance (GraphSAGE + Sum Pooling, 64 Hidden, 4 Layers)")
 
     if final_df is not None:
         result = final_df.iloc[0]
@@ -106,7 +106,8 @@ with st.expander("📋 Project Overview & Current Best Model Performance", expan
         c4.metric("Within ±0.5 log S", f"{result['Accuracy ±0.5 (%)']:.2f}%")
         c5.metric("Within ±1.0 log S", f"{result['Accuracy ±1.0 (%)']:.2f}%")
     else:
-        st.info("Run `model_training.ipynb` to generate `final_model_results.csv`.")
+        st.info("Run `model_training.py` to generate `final_model_results.csv`.")
+
 # ==========================================
 # NAVIGATION TABS FOR TASK 1 & QUESTION 1
 # ==========================================
@@ -234,7 +235,7 @@ with tab1:
             )
             st.plotly_chart(fig_layer, use_container_width=True)
         else:
-            st.info("Run New Cell 2 in notebook to generate `layer_comparison.csv`.")
+            st.info("Run `model_training.py` to generate `layer_comparison.csv`.")
 
     # Chart 5: Learning Rate
     with col_e:
@@ -259,7 +260,7 @@ with tab1:
             )
             st.plotly_chart(fig_lr, use_container_width=True)
         else:
-            st.info("Run New Cell 3 in notebook to generate `learning_rate_comparison.csv`.")
+            st.info("Run `model_training.py` to generate `learning_rate_comparison.csv`.")
 
     # Chart 6: Dropout Rate
     with col_f:
@@ -284,7 +285,7 @@ with tab1:
             )
             st.plotly_chart(fig_drop, use_container_width=True)
         else:
-            st.info("Run New Cell 4 in notebook to generate `dropout_comparison.csv`.")
+            st.info("Run `model_training.py` to generate `dropout_comparison.csv`.")
 
     # Baseline comparison table
     if baseline_df is not None:
@@ -300,7 +301,7 @@ with tab2:
     with col_s1:
         st.subheader("Separate Split Effects from Model Changes")
         st.caption(
-            "Comparing GCN (Mean Pool) vs. GraphSAGE (Sum Pool) across multiple random seeds and split ratios."
+            "Comparing GCN (Mean Pool) vs. 4-Layer GraphSAGE (Sum Pool) across multiple random seeds and split ratios."
         )
         if split_comp_df is not None:
             split_metric = st.selectbox(
@@ -322,11 +323,11 @@ with tab2:
             st.plotly_chart(fig_split, use_container_width=True)
             st.dataframe(split_comp_df, use_container_width=True, hide_index=True)
         else:
-            st.info("Run New Cell 5 in notebook to generate `split_comparison.csv`.")
+            st.info("Run `model_training.py` to generate `split_comparison.csv`.")
 
     with col_s2:
         st.subheader("Final Model Training & Validation Curves")
-        st.caption("Recorded across 100 epochs (Seed = 42) for the selected GraphSAGE (Sum Pool) checkpoint.")
+        st.caption("Recorded across 100 epochs (Seed = 42) for the selected 4-layer GraphSAGE (Sum Pool) checkpoint.")
         if curves_df is not None:
             loss_unit = st.radio(
                 "Loss Scale",
@@ -364,7 +365,7 @@ with tab2:
             )
             st.plotly_chart(fig_curve, use_container_width=True)
         else:
-            st.warning("`final_training_curves.csv` not found. Run Cell 36 in the notebook.")
+            st.warning("`final_training_curves.csv` not found. Run `model_training.py` first.")
 
 # ==============================================================================
 # TAB 3: QUESTION 1 — ERRORS BY SOLUBILITY, STRUCTURE & SPLIT (SLIDE 6)
@@ -381,139 +382,142 @@ with tab3:
         )
         filtered_preds = mol_preds_df[mol_preds_df["Split"].isin(selected_splits)].copy()
 
-        row1_c1, row1_c2 = st.columns(2)
+        if filtered_preds.empty:
+            st.warning("Select at least one dataset split to display error-analysis plots.")
+        else:
+            row1_c1, row1_c2 = st.columns(2)
 
-        # 1. Parity Plot & Errors by Split
-        with row1_c1:
-            st.markdown("##### A. Predicted vs. Measured Solubility by Split")
-            min_val = float(min(filtered_preds["Measured_logS"].min(), filtered_preds["Predicted_logS"].min())) - 0.5
-            max_val = float(max(filtered_preds["Measured_logS"].max(), filtered_preds["Predicted_logS"].max())) + 0.5
+            # 1. Parity Plot & Errors by Split
+            with row1_c1:
+                st.markdown("##### A. Predicted vs. Measured Solubility by Split")
+                min_val = float(min(filtered_preds["Measured_logS"].min(), filtered_preds["Predicted_logS"].min())) - 0.5
+                max_val = float(max(filtered_preds["Measured_logS"].max(), filtered_preds["Predicted_logS"].max())) + 0.5
 
-            fig_parity = px.scatter(
-                filtered_preds,
-                x="Measured_logS",
-                y="Predicted_logS",
-                color="Split",
-                hover_name="Compound ID",
-                hover_data=["smiles", "Absolute_Error", "Molecular Weight"],
-                opacity=0.75,
-                title="Parity Plot: Measured vs. Predicted log S",
-                template="plotly_white"
-            )
-            fig_parity.add_trace(go.Scatter(
-                x=[min_val, max_val],
-                y=[min_val, max_val],
-                mode="lines",
-                line=dict(dash="dash", color="black"),
-                name="Ideal (y = x)"
-            ))
-            fig_parity.update_layout(
-                xaxis_title="Measured Solubility (log S)",
-                yaxis_title="Predicted Solubility (log S)",
-                height=400
-            )
-            st.plotly_chart(fig_parity, use_container_width=True)
-
-        # 2. Error Distribution by Split (RMSE & MAE table + Boxplot)
-        with row1_c2:
-            st.markdown("##### B. Prediction Error Distribution Across Splits")
-            fig_box = px.box(
-                filtered_preds,
-                x="Split",
-                y="Absolute_Error",
-                color="Split",
-                points="outliers",
-                hover_name="Compound ID",
-                title="Absolute Error (|Pred - Measured|) by Split (log S)",
-                template="plotly_white"
-            )
-            fig_box.update_layout(
-                xaxis_title="Dataset Split",
-                yaxis_title="Absolute Error (log S)",
-                height=400,
-                showlegend=False
-            )
-            st.plotly_chart(fig_box, use_container_width=True)
-
-        st.divider()
-        row2_c1, row2_c2 = st.columns(2)
-
-        # 3. Errors by Solubility Regime
-        with row2_c1:
-            st.markdown("##### C. Errors by Solubility Level (Measured log S)")
-            filtered_preds["Solubility Bin"] = pd.cut(
-                filtered_preds["Measured_logS"],
-                bins=[-12, -6, -4, -2, 0, 2],
-                labels=[
-                    "Very Insoluble (<-6)",
-                    "Low (-6 to -4)",
-                    "Moderate (-4 to -2)",
-                    "Soluble (-2 to 0)",
-                    "Highly Soluble (>0)"
-                ]
-            )
-            sol_bin_summary = (
-                filtered_preds.groupby("Solubility Bin", observed=False)
-                .agg(
-                    Mean_Abs_Error=("Absolute_Error", "mean"),
-                    RMSE=("Error (Pred - Actual)", lambda x: np.sqrt(np.mean(x**2))),
-                    Count=("Compound ID", "count")
+                fig_parity = px.scatter(
+                    filtered_preds,
+                    x="Measured_logS",
+                    y="Predicted_logS",
+                    color="Split",
+                    hover_name="Compound ID",
+                    hover_data=["smiles", "Absolute_Error", "Molecular Weight"],
+                    opacity=0.75,
+                    title="Parity Plot: Measured vs. Predicted log S",
+                    template="plotly_white"
                 )
-                .reset_index()
-            )
-            fig_sol_err = px.bar(
-                sol_bin_summary,
-                x="Solubility Bin",
-                y=["Mean_Abs_Error", "RMSE"],
-                barmode="group",
-                text_auto=".3f",
-                hover_data=["Count"],
-                title="RMSE & MAE Across Solubility Regimes (log S)",
-                template="plotly_white"
-            )
-            fig_sol_err.update_layout(
-                xaxis_title="Measured Solubility Regime (log S)",
-                yaxis_title="Error (log S)",
-                height=400
-            )
-            st.plotly_chart(fig_sol_err, use_container_width=True)
+                fig_parity.add_trace(go.Scatter(
+                    x=[min_val, max_val],
+                    y=[min_val, max_val],
+                    mode="lines",
+                    line=dict(dash="dash", color="black"),
+                    name="Ideal (y = x)"
+                ))
+                fig_parity.update_layout(
+                    xaxis_title="Measured Solubility (log S)",
+                    yaxis_title="Predicted Solubility (log S)",
+                    height=400
+                )
+                st.plotly_chart(fig_parity, use_container_width=True)
 
-        # 4. Errors by Molecular Structure Feature
-        with row2_c2:
-            st.markdown("##### D. Errors by Molecular Structure Descriptor")
-            struct_features = [
-                "Molecular Weight",
-                "Polar Surface Area",
-                "Number of Rings",
-                "Number of H-Bond Donors",
-                "Number of Rotatable Bonds",
-                "Minimum Degree"
-            ]
-            chosen_struct = st.selectbox(
-                "Select Structural Descriptor:",
-                struct_features,
-                key="struct_feature_select"
-            )
-            fig_struct = px.scatter(
-                filtered_preds,
-                x=chosen_struct,
-                y="Absolute_Error",
-                color="Split",
-                hover_name="Compound ID",
-                hover_data=["Measured_logS", "Predicted_logS", "smiles"],
-                trendline="ols" if chosen_struct in ["Molecular Weight", "Polar Surface Area"] else None,
-                title=f"Absolute Error (log S) vs. {chosen_struct}",
-                template="plotly_white"
-            )
-            fig_struct.update_layout(
-                xaxis_title=chosen_struct,
-                yaxis_title="Absolute Error (log S)",
-                height=350
-            )
-            st.plotly_chart(fig_struct, use_container_width=True)
+            # 2. Error Distribution by Split (Boxplot)
+            with row1_c2:
+                st.markdown("##### B. Prediction Error Distribution Across Splits")
+                fig_box = px.box(
+                    filtered_preds,
+                    x="Split",
+                    y="Absolute_Error",
+                    color="Split",
+                    points="outliers",
+                    hover_name="Compound ID",
+                    title="Absolute Error (|Pred - Measured|) by Split (log S)",
+                    template="plotly_white"
+                )
+                fig_box.update_layout(
+                    xaxis_title="Dataset Split",
+                    yaxis_title="Absolute Error (log S)",
+                    height=400,
+                    showlegend=False
+                )
+                st.plotly_chart(fig_box, use_container_width=True)
+
+            st.divider()
+            row2_c1, row2_c2 = st.columns(2)
+
+            # 3. Errors by Solubility Regime
+            with row2_c1:
+                st.markdown("##### C. Errors by Solubility Level (Measured log S)")
+                filtered_preds["Solubility Bin"] = pd.cut(
+                    filtered_preds["Measured_logS"],
+                    bins=[-np.inf, -6, -4, -2, 0, np.inf],
+                    labels=[
+                        "Very Insoluble (<-6)",
+                        "Low (-6 to -4)",
+                        "Moderate (-4 to -2)",
+                        "Soluble (-2 to 0)",
+                        "Highly Soluble (>0)"
+                    ],
+                    include_lowest=True
+                )
+                sol_bin_summary = (
+                    filtered_preds.groupby("Solubility Bin", observed=False)
+                    .agg(
+                        Mean_Abs_Error=("Absolute_Error", "mean"),
+                        RMSE=("Error (Pred - Actual)", lambda x: np.sqrt(np.mean(x**2))),
+                        Count=("Compound ID", "count")
+                    )
+                    .reset_index()
+                )
+                fig_sol_err = px.bar(
+                    sol_bin_summary,
+                    x="Solubility Bin",
+                    y=["Mean_Abs_Error", "RMSE"],
+                    barmode="group",
+                    text_auto=".3f",
+                    hover_data=["Count"],
+                    title="RMSE & MAE Across Solubility Regimes (log S)",
+                    template="plotly_white"
+                )
+                fig_sol_err.update_layout(
+                    xaxis_title="Measured Solubility Regime (log S)",
+                    yaxis_title="Error (log S)",
+                    height=400
+                )
+                st.plotly_chart(fig_sol_err, use_container_width=True)
+
+            # 4. Errors by Molecular Structure Feature
+            with row2_c2:
+                st.markdown("##### D. Errors by Molecular Structure Descriptor")
+                struct_features = [
+                    "Molecular Weight",
+                    "Polar Surface Area",
+                    "Number of Rings",
+                    "Number of H-Bond Donors",
+                    "Number of Rotatable Bonds",
+                    "Minimum Degree"
+                ]
+                chosen_struct = st.selectbox(
+                    "Select Structural Descriptor:",
+                    struct_features,
+                    key="struct_feature_select"
+                )
+                fig_struct = px.scatter(
+                    filtered_preds,
+                    x=chosen_struct,
+                    y="Absolute_Error",
+                    color="Split",
+                    hover_name="Compound ID",
+                    hover_data=["Measured_logS", "Predicted_logS", "smiles"],
+                    title=f"Absolute Error (log S) vs. {chosen_struct}",
+                    template="plotly_white"
+                )
+                fig_struct.update_layout(
+                    xaxis_title=chosen_struct,
+                    yaxis_title="Absolute Error (log S)",
+                    height=350
+                )
+                st.plotly_chart(fig_struct, use_container_width=True)
 
     else:
-        st.warning("`molecule_predictions.csv` not found. Please run Cell 36 in `model_training.ipynb`.")
+        st.warning("`molecule_predictions.csv` not found. Please run `model_training.py` first.")
 
 # ==============================================================================
 # TAB 4: INTERACTIVE MOLECULE INSPECTOR & DOCUMENTED FINDINGS (SLIDE 6 & 7)
@@ -614,22 +618,22 @@ with tab4:
 
     st.divider()
 
-# ==========================================
+    # ==========================================
     # DOCUMENTED DASHBOARD FINDINGS (SLIDE 6 & 7)
     # ==========================================
     st.subheader("📝 Documented Dashboard Findings (For Deadline 1 & Shared Model Meeting)")
     st.markdown("""
     * **1. Architecture & Pooling Selection (`GraphSAGE` + `sum` pooling):**
-      * Across all tested GNN architectures (`GCN`, `GraphSAGE`, `GAT`), **GraphSAGE** achieved the lowest validation error (`1.1961 log S` vs. `1.3358 log S` for GAT and `1.3982 log S` for GCN).
-      * Replacing `mean` or `max` pooling with **global `sum` pooling** produced the largest performance jump (Validation RMSE improved from `1.2248 log S` with mean pooling to **`0.8626 log S`** with sum pooling; $R^2 = 0.8523$). Chemically, water solubility depends on the *total count* of hydrophobic carbons and hydrophilic polar groups—which `sum` pooling preserves and `mean` pooling dilutes.
+      * Across all tested GNN architectures (`GCN`, `GraphSAGE`, `GAT`), **GraphSAGE** achieved the lowest validation error (`1.1909 log S` vs. `1.2551 log S` for GAT and `1.3583 log S` for GCN).
+      * Replacing `mean` or `max` pooling with **global `sum` pooling** produced the largest performance jump (Validation RMSE improved from `1.1909 log S` with mean pooling to **`0.8779 log S`** with sum pooling; $R^2 = 0.8470$). Chemically, water solubility depends on the *total count* of hydrophobic carbons and hydrophilic polar groups—which `sum` pooling preserves and `mean` pooling dilutes.
     * **2. Hyperparameter & Split Stability:**
-      * **Hyperparameter Sensitivity:** `64` hidden channels (`0.8793 log S` vs. `0.9350 log S` for `128` channels) avoided overfitting on the 1,128-molecule ESOL dataset. Deeper message passing (`3–4` layers) and lower dropout (`0.0`) further reduced validation RMSE (`0.7872` and `0.7237 log S`), while our 2-layer baseline (`dropout = 0.2`, `lr = 0.001`) provides a well-regularized, over-smoothing-resistant checkpoint (`Test RMSE = 0.9559 log S`).
-      * **Separating Split Effects from Model Changes:** Across all tested split seeds and ratios (`70/15/15 Seed 42`, `70/15/15 Seed 100`, `80/10/10 Seed 42`), **GraphSAGE (Sum Pool)** consistently outperformed **GCN (Mean Pool)** by ~0.35–0.50 $\log S$ RMSE, confirming the improvement comes from the model architecture rather than a lucky split.
+      * **Hyperparameter Sensitivity:** `64` hidden channels (`0.8779 log S` vs. `0.9067 log S` for `128` channels) avoided overfitting on the 1,128-molecule ESOL dataset. Increasing message-passing depth from 2 to **4 layers** further reduced Validation RMSE to **`0.7872 log S`** (`Test RMSE = 0.8963 log S`, `Test MAE = 0.6386 log S`, `Test R² = 0.8033`).
+      * **Separating Split Effects from Model Changes:** Across all tested split seeds and ratios (`70/15/15 Seed 42`, `70/15/15 Seed 100`, `80/10/10 Seed 42`), **4-layer GraphSAGE (Sum Pool)** consistently outperformed **GCN (Mean Pool)** by ~0.40–0.57 $\log S$ Test RMSE, confirming the improvement comes from the model architecture rather than a lucky split.
     * **3. Question 1 — Where the Model Performs Well vs. Fails:**
-      * **Performs Well:** Moderate-to-soluble small organic molecules ($\log S \in [-4, 0]$, Molecular Weight $< 250\text{ g/mol}$, 0–2 rings), where 77.65% of all test predictions fall within $\pm 1.0 \log S$.
+      * **Performs Well:** Moderate-to-soluble small organic molecules ($\log S \in [-4, 0]$, Molecular Weight $< 250\text{ g/mol}$, 0–2 rings), with **84.71%** of all test predictions falling within $\pm 1.0 \log S$.
       * **Where it Fails:** Extreme low-solubility compounds ($\log S < -6$) and large polycyclic/halogenated molecules (high Molecular Weight $> 350\text{ g/mol}$ or $\ge 4$ rings). Since our 5 node features only capture basic atom properties (`AtomicNum`, `Degree`, `FormalCharge`, `TotalNumHs`, `IsAromatic`) without 3D conformation or crystal-packing lattice energy, solid-state polycyclic molecules exhibit higher residual errors.
     * **4. Candidate Checkpoint Recommendation for XAI Explainer Comparison:**
-      * We recommend `artifacts/checkpoints/final_graphsage_model.pt` (**2-layer GraphSAGE, Sum Pooling, 64 hidden channels, Test RMSE = `0.9559 log S`, Test MAE = `0.6727 log S`**) paired with `artifacts/results/split_ids.csv` (`Seed = 42`).
+      * We recommend `artifacts/checkpoints/final_graphsage_model.pt` (**4-layer GraphSAGE, Sum Pooling, 64 hidden channels, Test RMSE = `0.8963 log S`, Test MAE = `0.6386 log S`, Test $R^2 = 0.8033$**) paired with `artifacts/results/split_ids.csv` (`Seed = 42`).
     """)
 
 st.divider()
